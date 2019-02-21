@@ -1,0 +1,126 @@
+starting vacuum...end.
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 3000
+query mode: simple
+number of clients: 128
+number of threads: 128
+duration: 3600 s
+number of transactions actually processed: 139633638
+latency average = 3.300 ms
+tps = 38787.084348 (including connections establishing)
+tps = 38787.333352 (excluding connections establishing)
+
+ Performance counter stats for './pgbench db -U ibrar -T 3600 -j 128 -c 128':
+
+ 4,612,582,234,506      dTLB-loads                                                    (63.12%)
+   158,208,347,403      dTLB-load-misses          #    3.43% of all dTLB cache hits   (58.17%)
+    21,828,330,980      iTLB-loads                                                    (58.80%)
+    59,069,791,098      iTLB-load-misses          #  270.61% of all iTLB cache hits   (75.92%)
+
+    3603.424311027 seconds time elapsed
+
+starting vacuum...end.
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 3000
+query mode: simple
+number of clients: 128
+number of threads: 128
+duration: 3600 s
+number of transactions actually processed: 139704721
+latency average = 3.298 ms
+tps = 38806.821246 (including connections establishing)
+tps = 38807.206306 (excluding connections establishing)
+
+ Performance counter stats for './pgbench db -U ibrar -T 3600 -j 128 -c 128':
+
+ 4,613,669,059,771      dTLB-loads                                                    (63.06%)
+   154,140,462,847      dTLB-load-misses          #    3.34% of all dTLB cache hits   (58.11%)
+    22,548,048,695      iTLB-loads                                                    (58.70%)
+    58,590,245,569      iTLB-load-misses          #  259.85% of all iTLB cache hits   (75.88%)
+
+    3601.718430403 seconds time elapsed
+
+starting vacuum...end.
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 3000
+query mode: simple
+number of clients: 128
+number of threads: 128
+duration: 3600 s
+number of transactions actually processed: 139473449
+latency average = 3.304 ms
+tps = 38742.442320 (including connections establishing)
+tps = 38742.761390 (excluding connections establishing)
+
+ Performance counter stats for './pgbench db -U ibrar -T 3600 -j 128 -c 128':
+
+ 4,603,200,062,299      dTLB-loads                                                    (63.09%)
+   160,516,724,895      dTLB-load-misses          #    3.49% of all dTLB cache hits   (58.21%)
+    20,651,485,860      iTLB-loads                                                    (58.78%)
+    62,239,293,185      iTLB-load-misses          #  301.38% of all iTLB cache hits   (75.88%)
+
+    3601.703228682 seconds time elapsed
+
+starting vacuum...end.
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 7000
+query mode: simple
+number of clients: 128
+number of threads: 128
+duration: 3600 s
+number of transactions actually processed: 125258092
+latency average = 3.679 ms
+tps = 34793.751646 (including connections establishing)
+tps = 34794.109903 (excluding connections establishing)
+
+ Performance counter stats for './pgbench db -U ibrar -T 3600 -j 128 -c 128':
+
+ 4,186,363,944,847      dTLB-loads                                                    (64.46%)
+   138,744,447,234      dTLB-load-misses          #    3.31% of all dTLB cache hits   (59.63%)
+    21,395,687,804      iTLB-loads                                                    (60.22%)
+    53,695,911,868      iTLB-load-misses          #  250.97% of all iTLB cache hits   (76.81%)
+
+    3600.839143744 seconds time elapsed
+
+starting vacuum...end.
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 7000
+query mode: simple
+number of clients: 128
+number of threads: 128
+duration: 3600 s
+number of transactions actually processed: 124936113
+latency average = 3.688 ms
+tps = 34704.271747 (including connections establishing)
+tps = 34704.728766 (excluding connections establishing)
+
+ Performance counter stats for './pgbench db -U ibrar -T 3600 -j 128 -c 128':
+
+ 4,172,883,565,124      dTLB-loads                                                    (64.45%)
+   137,746,898,603      dTLB-load-misses          #    3.30% of all dTLB cache hits   (59.60%)
+    21,642,461,265      iTLB-loads                                                    (60.15%)
+    55,820,032,774      iTLB-load-misses          #  257.92% of all iTLB cache hits   (76.77%)
+
+    3600.551005356 seconds time elapsed
+
+starting vacuum...end.
+transaction type: <builtin: TPC-B (sort of)>
+scaling factor: 7000
+query mode: simple
+number of clients: 128
+number of threads: 128
+duration: 3600 s
+number of transactions actually processed: 125027571
+latency average = 3.686 ms
+tps = 34729.838426 (including connections establishing)
+tps = 34730.137499 (excluding connections establishing)
+
+ Performance counter stats for './pgbench db -U ibrar -T 3600 -j 128 -c 128':
+
+ 4,177,528,797,459      dTLB-loads                                                    (64.48%)
+   140,026,123,826      dTLB-load-misses          #    3.35% of all dTLB cache hits   (59.67%)
+    21,538,333,563      iTLB-loads                                                    (60.25%)
+    52,037,249,617      iTLB-load-misses          #  241.60% of all iTLB cache hits   (76.82%)
+
+    3600.861744346 seconds time elapsed
+

@@ -1,0 +1,2896 @@
+<html>
+	<head>
+		<title>nmonChart</title>
+<script>
+function config() {
+    var myWindow = window.open("", "MsgWindow", "width=1024, height=800");
+    myWindow.document.write("<h2>Configuration data for 7000-3-256.nmon <br>Use PageDown or Scroll bar (if available)</h2><br>\
+<b>progname</b> = nmon<br>\
+<b>command</b> = nmon -f <br>\
+<b>version</b> = 14g<br>\
+<b>disks_per_line</b> = 150<br>\
+<b>max_disks</b> = 256<br>\
+<b>disks</b> = 8<br>\
+<b>host</b> = smblade01<br>\
+<b>user</b> = ibrar<br>\
+<b>OS</b> = Linux<br>\
+<b>runname</b> = smblade01<br>\
+<b>time</b> = 19:38.46<br>\
+<b>date</b> = 22-JAN-2019<br>\
+<b>interval</b> = 300<br>\
+<b>snapshots</b> = 288<br>\
+<b>cpus</b> = 56<br>\
+<b>proc_stat_variables</b> = 8<br>\
+000 <b>/etc/release</b> <br>\
+001 <b>/etc/release</b> DISTRIB_ID=Ubuntu<br>\
+002 <b>/etc/release</b> DISTRIB_RELEASE=16.04<br>\
+003 <b>/etc/release</b> DISTRIB_CODENAME=xenial<br>\
+004 <b>/etc/release</b> DISTRIB_DESCRIPTION=Ubuntu 16.04.5 LTS<br>\
+005 <b>/etc/release</b> NAME=Ubuntu<br>\
+006 <b>/etc/release</b> VERSION=16.04.5 LTS (Xenial Xerus)<br>\
+007 <b>/etc/release</b> ID=ubuntu<br>\
+008 <b>/etc/release</b> ID_LIKE=debian<br>\
+009 <b>/etc/release</b> PRETTY_NAME=Ubuntu 16.04.5 LTS<br>\
+010 <b>/etc/release</b> VERSION_ID=16.04<br>\
+011 <b>/etc/release</b> HOME_URL=http://www.ubuntu.com/<br>\
+012 <b>/etc/release</b> SUPPORT_URL=http://help.ubuntu.com/<br>\
+013 <b>/etc/release</b> BUG_REPORT_URL=http://bugs.launchpad.net/ubuntu/<br>\
+014 <b>/etc/release</b> VERSION_CODENAME=xenial<br>\
+015 <b>/etc/release</b> UBUNTU_CODENAME=xenial<br>\
+016 <b>lsb_release</b> <br>\
+017 <b>lsb_release</b> Distributor ID:	Ubuntu<br>\
+018 <b>lsb_release</b> Description:	Ubuntu 16.04.5 LTS<br>\
+019 <b>lsb_release</b> Release:	16.04<br>\
+020 <b>lsb_release</b> Codename:	xenial<br>\
+021 <b>fdisk-l</b> <br>\
+022 <b>/proc/cpuinfo</b> <br>\
+023 <b>/proc/cpuinfo</b> processor	: 0<br>\
+024 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+025 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+026 <b>/proc/cpuinfo</b> model		: 63<br>\
+027 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+028 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+029 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+030 <b>/proc/cpuinfo</b> cpu MHz		: 2502.315<br>\
+031 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+032 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+033 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+034 <b>/proc/cpuinfo</b> core id		: 0<br>\
+035 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+036 <b>/proc/cpuinfo</b> apicid		: 0<br>\
+037 <b>/proc/cpuinfo</b> initial apicid	: 0<br>\
+038 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+039 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+040 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+041 <b>/proc/cpuinfo</b> wp		: yes<br>\
+042 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+043 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+044 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+045 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+046 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+047 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+048 <b>/proc/cpuinfo</b> power management:<br>\
+049 <b>/proc/cpuinfo</b> <br>\
+050 <b>/proc/cpuinfo</b> processor	: 1<br>\
+051 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+052 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+053 <b>/proc/cpuinfo</b> model		: 63<br>\
+054 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+055 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+056 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+057 <b>/proc/cpuinfo</b> cpu MHz		: 2502.888<br>\
+058 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+059 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+060 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+061 <b>/proc/cpuinfo</b> core id		: 1<br>\
+062 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+063 <b>/proc/cpuinfo</b> apicid		: 2<br>\
+064 <b>/proc/cpuinfo</b> initial apicid	: 2<br>\
+065 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+066 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+067 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+068 <b>/proc/cpuinfo</b> wp		: yes<br>\
+069 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+070 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+071 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+072 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+073 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+074 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+075 <b>/proc/cpuinfo</b> power management:<br>\
+076 <b>/proc/cpuinfo</b> <br>\
+077 <b>/proc/cpuinfo</b> processor	: 2<br>\
+078 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+079 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+080 <b>/proc/cpuinfo</b> model		: 63<br>\
+081 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+082 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+083 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+084 <b>/proc/cpuinfo</b> cpu MHz		: 2502.213<br>\
+085 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+086 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+087 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+088 <b>/proc/cpuinfo</b> core id		: 2<br>\
+089 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+090 <b>/proc/cpuinfo</b> apicid		: 4<br>\
+091 <b>/proc/cpuinfo</b> initial apicid	: 4<br>\
+092 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+093 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+094 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+095 <b>/proc/cpuinfo</b> wp		: yes<br>\
+096 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+097 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+098 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+099 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+100 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+101 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+102 <b>/proc/cpuinfo</b> power management:<br>\
+103 <b>/proc/cpuinfo</b> <br>\
+104 <b>/proc/cpuinfo</b> processor	: 3<br>\
+105 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+106 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+107 <b>/proc/cpuinfo</b> model		: 63<br>\
+108 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+109 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+110 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+111 <b>/proc/cpuinfo</b> cpu MHz		: 2500.520<br>\
+112 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+113 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+114 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+115 <b>/proc/cpuinfo</b> core id		: 3<br>\
+116 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+117 <b>/proc/cpuinfo</b> apicid		: 6<br>\
+118 <b>/proc/cpuinfo</b> initial apicid	: 6<br>\
+119 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+120 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+121 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+122 <b>/proc/cpuinfo</b> wp		: yes<br>\
+123 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+124 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+125 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+126 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+127 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+128 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+129 <b>/proc/cpuinfo</b> power management:<br>\
+130 <b>/proc/cpuinfo</b> <br>\
+131 <b>/proc/cpuinfo</b> processor	: 4<br>\
+132 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+133 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+134 <b>/proc/cpuinfo</b> model		: 63<br>\
+135 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+136 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+137 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+138 <b>/proc/cpuinfo</b> cpu MHz		: 2500.378<br>\
+139 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+140 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+141 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+142 <b>/proc/cpuinfo</b> core id		: 4<br>\
+143 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+144 <b>/proc/cpuinfo</b> apicid		: 8<br>\
+145 <b>/proc/cpuinfo</b> initial apicid	: 8<br>\
+146 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+147 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+148 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+149 <b>/proc/cpuinfo</b> wp		: yes<br>\
+150 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+151 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+152 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+153 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+154 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+155 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+156 <b>/proc/cpuinfo</b> power management:<br>\
+157 <b>/proc/cpuinfo</b> <br>\
+158 <b>/proc/cpuinfo</b> processor	: 5<br>\
+159 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+160 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+161 <b>/proc/cpuinfo</b> model		: 63<br>\
+162 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+163 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+164 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+165 <b>/proc/cpuinfo</b> cpu MHz		: 2501.946<br>\
+166 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+167 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+168 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+169 <b>/proc/cpuinfo</b> core id		: 5<br>\
+170 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+171 <b>/proc/cpuinfo</b> apicid		: 10<br>\
+172 <b>/proc/cpuinfo</b> initial apicid	: 10<br>\
+173 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+174 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+175 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+176 <b>/proc/cpuinfo</b> wp		: yes<br>\
+177 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+178 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+179 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+180 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+181 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+182 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+183 <b>/proc/cpuinfo</b> power management:<br>\
+184 <b>/proc/cpuinfo</b> <br>\
+185 <b>/proc/cpuinfo</b> processor	: 6<br>\
+186 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+187 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+188 <b>/proc/cpuinfo</b> model		: 63<br>\
+189 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+190 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+191 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+192 <b>/proc/cpuinfo</b> cpu MHz		: 2502.229<br>\
+193 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+194 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+195 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+196 <b>/proc/cpuinfo</b> core id		: 6<br>\
+197 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+198 <b>/proc/cpuinfo</b> apicid		: 12<br>\
+199 <b>/proc/cpuinfo</b> initial apicid	: 12<br>\
+200 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+201 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+202 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+203 <b>/proc/cpuinfo</b> wp		: yes<br>\
+204 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+205 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+206 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+207 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+208 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+209 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+210 <b>/proc/cpuinfo</b> power management:<br>\
+211 <b>/proc/cpuinfo</b> <br>\
+212 <b>/proc/cpuinfo</b> processor	: 7<br>\
+213 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+214 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+215 <b>/proc/cpuinfo</b> model		: 63<br>\
+216 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+217 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+218 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+219 <b>/proc/cpuinfo</b> cpu MHz		: 2502.791<br>\
+220 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+221 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+222 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+223 <b>/proc/cpuinfo</b> core id		: 8<br>\
+224 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+225 <b>/proc/cpuinfo</b> apicid		: 16<br>\
+226 <b>/proc/cpuinfo</b> initial apicid	: 16<br>\
+227 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+228 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+229 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+230 <b>/proc/cpuinfo</b> wp		: yes<br>\
+231 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+232 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+233 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+234 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+235 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+236 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+237 <b>/proc/cpuinfo</b> power management:<br>\
+238 <b>/proc/cpuinfo</b> <br>\
+239 <b>/proc/cpuinfo</b> processor	: 8<br>\
+240 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+241 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+242 <b>/proc/cpuinfo</b> model		: 63<br>\
+243 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+244 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+245 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+246 <b>/proc/cpuinfo</b> cpu MHz		: 2504.774<br>\
+247 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+248 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+249 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+250 <b>/proc/cpuinfo</b> core id		: 9<br>\
+251 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+252 <b>/proc/cpuinfo</b> apicid		: 18<br>\
+253 <b>/proc/cpuinfo</b> initial apicid	: 18<br>\
+254 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+255 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+256 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+257 <b>/proc/cpuinfo</b> wp		: yes<br>\
+258 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+259 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+260 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+261 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+262 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+263 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+264 <b>/proc/cpuinfo</b> power management:<br>\
+265 <b>/proc/cpuinfo</b> <br>\
+266 <b>/proc/cpuinfo</b> processor	: 9<br>\
+267 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+268 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+269 <b>/proc/cpuinfo</b> model		: 63<br>\
+270 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+271 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+272 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+273 <b>/proc/cpuinfo</b> cpu MHz		: 2500.218<br>\
+274 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+275 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+276 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+277 <b>/proc/cpuinfo</b> core id		: 10<br>\
+278 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+279 <b>/proc/cpuinfo</b> apicid		: 20<br>\
+280 <b>/proc/cpuinfo</b> initial apicid	: 20<br>\
+281 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+282 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+283 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+284 <b>/proc/cpuinfo</b> wp		: yes<br>\
+285 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+286 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+287 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+288 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+289 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+290 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+291 <b>/proc/cpuinfo</b> power management:<br>\
+292 <b>/proc/cpuinfo</b> <br>\
+293 <b>/proc/cpuinfo</b> processor	: 10<br>\
+294 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+295 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+296 <b>/proc/cpuinfo</b> model		: 63<br>\
+297 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+298 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+299 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+300 <b>/proc/cpuinfo</b> cpu MHz		: 2502.344<br>\
+301 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+302 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+303 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+304 <b>/proc/cpuinfo</b> core id		: 11<br>\
+305 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+306 <b>/proc/cpuinfo</b> apicid		: 22<br>\
+307 <b>/proc/cpuinfo</b> initial apicid	: 22<br>\
+308 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+309 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+310 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+311 <b>/proc/cpuinfo</b> wp		: yes<br>\
+312 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+313 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+314 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+315 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+316 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+317 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+318 <b>/proc/cpuinfo</b> power management:<br>\
+319 <b>/proc/cpuinfo</b> <br>\
+320 <b>/proc/cpuinfo</b> processor	: 11<br>\
+321 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+322 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+323 <b>/proc/cpuinfo</b> model		: 63<br>\
+324 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+325 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+326 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+327 <b>/proc/cpuinfo</b> cpu MHz		: 2500.070<br>\
+328 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+329 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+330 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+331 <b>/proc/cpuinfo</b> core id		: 12<br>\
+332 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+333 <b>/proc/cpuinfo</b> apicid		: 24<br>\
+334 <b>/proc/cpuinfo</b> initial apicid	: 24<br>\
+335 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+336 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+337 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+338 <b>/proc/cpuinfo</b> wp		: yes<br>\
+339 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+340 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+341 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+342 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+343 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+344 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+345 <b>/proc/cpuinfo</b> power management:<br>\
+346 <b>/proc/cpuinfo</b> <br>\
+347 <b>/proc/cpuinfo</b> processor	: 12<br>\
+348 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+349 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+350 <b>/proc/cpuinfo</b> model		: 63<br>\
+351 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+352 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+353 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+354 <b>/proc/cpuinfo</b> cpu MHz		: 2500.642<br>\
+355 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+356 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+357 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+358 <b>/proc/cpuinfo</b> core id		: 13<br>\
+359 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+360 <b>/proc/cpuinfo</b> apicid		: 26<br>\
+361 <b>/proc/cpuinfo</b> initial apicid	: 26<br>\
+362 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+363 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+364 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+365 <b>/proc/cpuinfo</b> wp		: yes<br>\
+366 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+367 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+368 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+369 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+370 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+371 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+372 <b>/proc/cpuinfo</b> power management:<br>\
+373 <b>/proc/cpuinfo</b> <br>\
+374 <b>/proc/cpuinfo</b> processor	: 13<br>\
+375 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+376 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+377 <b>/proc/cpuinfo</b> model		: 63<br>\
+378 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+379 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+380 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+381 <b>/proc/cpuinfo</b> cpu MHz		: 2501.714<br>\
+382 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+383 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+384 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+385 <b>/proc/cpuinfo</b> core id		: 14<br>\
+386 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+387 <b>/proc/cpuinfo</b> apicid		: 28<br>\
+388 <b>/proc/cpuinfo</b> initial apicid	: 28<br>\
+389 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+390 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+391 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+392 <b>/proc/cpuinfo</b> wp		: yes<br>\
+393 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+394 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+395 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+396 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+397 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+398 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+399 <b>/proc/cpuinfo</b> power management:<br>\
+400 <b>/proc/cpuinfo</b> <br>\
+401 <b>/proc/cpuinfo</b> processor	: 14<br>\
+402 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+403 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+404 <b>/proc/cpuinfo</b> model		: 63<br>\
+405 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+406 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+407 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+408 <b>/proc/cpuinfo</b> cpu MHz		: 2500.297<br>\
+409 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+410 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+411 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+412 <b>/proc/cpuinfo</b> core id		: 0<br>\
+413 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+414 <b>/proc/cpuinfo</b> apicid		: 32<br>\
+415 <b>/proc/cpuinfo</b> initial apicid	: 32<br>\
+416 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+417 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+418 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+419 <b>/proc/cpuinfo</b> wp		: yes<br>\
+420 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+421 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+422 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+423 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+424 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+425 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+426 <b>/proc/cpuinfo</b> power management:<br>\
+427 <b>/proc/cpuinfo</b> <br>\
+428 <b>/proc/cpuinfo</b> processor	: 15<br>\
+429 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+430 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+431 <b>/proc/cpuinfo</b> model		: 63<br>\
+432 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+433 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+434 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+435 <b>/proc/cpuinfo</b> cpu MHz		: 2499.351<br>\
+436 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+437 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+438 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+439 <b>/proc/cpuinfo</b> core id		: 1<br>\
+440 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+441 <b>/proc/cpuinfo</b> apicid		: 34<br>\
+442 <b>/proc/cpuinfo</b> initial apicid	: 34<br>\
+443 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+444 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+445 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+446 <b>/proc/cpuinfo</b> wp		: yes<br>\
+447 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+448 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+449 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+450 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+451 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+452 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+453 <b>/proc/cpuinfo</b> power management:<br>\
+454 <b>/proc/cpuinfo</b> <br>\
+455 <b>/proc/cpuinfo</b> processor	: 16<br>\
+456 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+457 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+458 <b>/proc/cpuinfo</b> model		: 63<br>\
+459 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+460 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+461 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+462 <b>/proc/cpuinfo</b> cpu MHz		: 2501.091<br>\
+463 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+464 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+465 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+466 <b>/proc/cpuinfo</b> core id		: 2<br>\
+467 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+468 <b>/proc/cpuinfo</b> apicid		: 36<br>\
+469 <b>/proc/cpuinfo</b> initial apicid	: 36<br>\
+470 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+471 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+472 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+473 <b>/proc/cpuinfo</b> wp		: yes<br>\
+474 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+475 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+476 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+477 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+478 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+479 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+480 <b>/proc/cpuinfo</b> power management:<br>\
+481 <b>/proc/cpuinfo</b> <br>\
+482 <b>/proc/cpuinfo</b> processor	: 17<br>\
+483 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+484 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+485 <b>/proc/cpuinfo</b> model		: 63<br>\
+486 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+487 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+488 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+489 <b>/proc/cpuinfo</b> cpu MHz		: 2500.712<br>\
+490 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+491 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+492 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+493 <b>/proc/cpuinfo</b> core id		: 3<br>\
+494 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+495 <b>/proc/cpuinfo</b> apicid		: 38<br>\
+496 <b>/proc/cpuinfo</b> initial apicid	: 38<br>\
+497 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+498 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+499 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+500 <b>/proc/cpuinfo</b> wp		: yes<br>\
+501 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+502 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+503 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+504 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+505 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+506 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+507 <b>/proc/cpuinfo</b> power management:<br>\
+508 <b>/proc/cpuinfo</b> <br>\
+509 <b>/proc/cpuinfo</b> processor	: 18<br>\
+510 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+511 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+512 <b>/proc/cpuinfo</b> model		: 63<br>\
+513 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+514 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+515 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+516 <b>/proc/cpuinfo</b> cpu MHz		: 2503.490<br>\
+517 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+518 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+519 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+520 <b>/proc/cpuinfo</b> core id		: 4<br>\
+521 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+522 <b>/proc/cpuinfo</b> apicid		: 40<br>\
+523 <b>/proc/cpuinfo</b> initial apicid	: 40<br>\
+524 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+525 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+526 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+527 <b>/proc/cpuinfo</b> wp		: yes<br>\
+528 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+529 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+530 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+531 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+532 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+533 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+534 <b>/proc/cpuinfo</b> power management:<br>\
+535 <b>/proc/cpuinfo</b> <br>\
+536 <b>/proc/cpuinfo</b> processor	: 19<br>\
+537 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+538 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+539 <b>/proc/cpuinfo</b> model		: 63<br>\
+540 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+541 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+542 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+543 <b>/proc/cpuinfo</b> cpu MHz		: 2505.443<br>\
+544 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+545 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+546 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+547 <b>/proc/cpuinfo</b> core id		: 5<br>\
+548 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+549 <b>/proc/cpuinfo</b> apicid		: 42<br>\
+550 <b>/proc/cpuinfo</b> initial apicid	: 42<br>\
+551 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+552 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+553 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+554 <b>/proc/cpuinfo</b> wp		: yes<br>\
+555 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+556 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+557 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+558 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+559 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+560 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+561 <b>/proc/cpuinfo</b> power management:<br>\
+562 <b>/proc/cpuinfo</b> <br>\
+563 <b>/proc/cpuinfo</b> processor	: 20<br>\
+564 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+565 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+566 <b>/proc/cpuinfo</b> model		: 63<br>\
+567 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+568 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+569 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+570 <b>/proc/cpuinfo</b> cpu MHz		: 2504.346<br>\
+571 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+572 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+573 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+574 <b>/proc/cpuinfo</b> core id		: 6<br>\
+575 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+576 <b>/proc/cpuinfo</b> apicid		: 44<br>\
+577 <b>/proc/cpuinfo</b> initial apicid	: 44<br>\
+578 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+579 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+580 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+581 <b>/proc/cpuinfo</b> wp		: yes<br>\
+582 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+583 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+584 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+585 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+586 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+587 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+588 <b>/proc/cpuinfo</b> power management:<br>\
+589 <b>/proc/cpuinfo</b> <br>\
+590 <b>/proc/cpuinfo</b> processor	: 21<br>\
+591 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+592 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+593 <b>/proc/cpuinfo</b> model		: 63<br>\
+594 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+595 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+596 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+597 <b>/proc/cpuinfo</b> cpu MHz		: 2501.115<br>\
+598 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+599 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+600 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+601 <b>/proc/cpuinfo</b> core id		: 8<br>\
+602 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+603 <b>/proc/cpuinfo</b> apicid		: 48<br>\
+604 <b>/proc/cpuinfo</b> initial apicid	: 48<br>\
+605 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+606 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+607 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+608 <b>/proc/cpuinfo</b> wp		: yes<br>\
+609 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+610 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+611 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+612 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+613 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+614 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+615 <b>/proc/cpuinfo</b> power management:<br>\
+616 <b>/proc/cpuinfo</b> <br>\
+617 <b>/proc/cpuinfo</b> processor	: 22<br>\
+618 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+619 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+620 <b>/proc/cpuinfo</b> model		: 63<br>\
+621 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+622 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+623 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+624 <b>/proc/cpuinfo</b> cpu MHz		: 2500.555<br>\
+625 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+626 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+627 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+628 <b>/proc/cpuinfo</b> core id		: 9<br>\
+629 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+630 <b>/proc/cpuinfo</b> apicid		: 50<br>\
+631 <b>/proc/cpuinfo</b> initial apicid	: 50<br>\
+632 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+633 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+634 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+635 <b>/proc/cpuinfo</b> wp		: yes<br>\
+636 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+637 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+638 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+639 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+640 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+641 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+642 <b>/proc/cpuinfo</b> power management:<br>\
+643 <b>/proc/cpuinfo</b> <br>\
+644 <b>/proc/cpuinfo</b> processor	: 23<br>\
+645 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+646 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+647 <b>/proc/cpuinfo</b> model		: 63<br>\
+648 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+649 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+650 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+651 <b>/proc/cpuinfo</b> cpu MHz		: 2500.400<br>\
+652 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+653 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+654 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+655 <b>/proc/cpuinfo</b> core id		: 10<br>\
+656 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+657 <b>/proc/cpuinfo</b> apicid		: 52<br>\
+658 <b>/proc/cpuinfo</b> initial apicid	: 52<br>\
+659 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+660 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+661 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+662 <b>/proc/cpuinfo</b> wp		: yes<br>\
+663 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+664 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+665 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+666 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+667 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+668 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+669 <b>/proc/cpuinfo</b> power management:<br>\
+670 <b>/proc/cpuinfo</b> <br>\
+671 <b>/proc/cpuinfo</b> processor	: 24<br>\
+672 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+673 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+674 <b>/proc/cpuinfo</b> model		: 63<br>\
+675 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+676 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+677 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+678 <b>/proc/cpuinfo</b> cpu MHz		: 2500.348<br>\
+679 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+680 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+681 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+682 <b>/proc/cpuinfo</b> core id		: 11<br>\
+683 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+684 <b>/proc/cpuinfo</b> apicid		: 54<br>\
+685 <b>/proc/cpuinfo</b> initial apicid	: 54<br>\
+686 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+687 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+688 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+689 <b>/proc/cpuinfo</b> wp		: yes<br>\
+690 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+691 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+692 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+693 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+694 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+695 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+696 <b>/proc/cpuinfo</b> power management:<br>\
+697 <b>/proc/cpuinfo</b> <br>\
+698 <b>/proc/cpuinfo</b> processor	: 25<br>\
+699 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+700 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+701 <b>/proc/cpuinfo</b> model		: 63<br>\
+702 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+703 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+704 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+705 <b>/proc/cpuinfo</b> cpu MHz		: 2500.163<br>\
+706 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+707 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+708 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+709 <b>/proc/cpuinfo</b> core id		: 12<br>\
+710 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+711 <b>/proc/cpuinfo</b> apicid		: 56<br>\
+712 <b>/proc/cpuinfo</b> initial apicid	: 56<br>\
+713 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+714 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+715 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+716 <b>/proc/cpuinfo</b> wp		: yes<br>\
+717 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+718 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+719 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+720 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+721 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+722 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+723 <b>/proc/cpuinfo</b> power management:<br>\
+724 <b>/proc/cpuinfo</b> <br>\
+725 <b>/proc/cpuinfo</b> processor	: 26<br>\
+726 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+727 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+728 <b>/proc/cpuinfo</b> model		: 63<br>\
+729 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+730 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+731 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+732 <b>/proc/cpuinfo</b> cpu MHz		: 2501.376<br>\
+733 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+734 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+735 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+736 <b>/proc/cpuinfo</b> core id		: 13<br>\
+737 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+738 <b>/proc/cpuinfo</b> apicid		: 58<br>\
+739 <b>/proc/cpuinfo</b> initial apicid	: 58<br>\
+740 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+741 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+742 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+743 <b>/proc/cpuinfo</b> wp		: yes<br>\
+744 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+745 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+746 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+747 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+748 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+749 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+750 <b>/proc/cpuinfo</b> power management:<br>\
+751 <b>/proc/cpuinfo</b> <br>\
+752 <b>/proc/cpuinfo</b> processor	: 27<br>\
+753 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+754 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+755 <b>/proc/cpuinfo</b> model		: 63<br>\
+756 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+757 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+758 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+759 <b>/proc/cpuinfo</b> cpu MHz		: 2500.015<br>\
+760 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+761 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+762 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+763 <b>/proc/cpuinfo</b> core id		: 14<br>\
+764 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+765 <b>/proc/cpuinfo</b> apicid		: 60<br>\
+766 <b>/proc/cpuinfo</b> initial apicid	: 60<br>\
+767 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+768 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+769 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+770 <b>/proc/cpuinfo</b> wp		: yes<br>\
+771 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+772 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+773 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+774 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+775 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+776 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+777 <b>/proc/cpuinfo</b> power management:<br>\
+778 <b>/proc/cpuinfo</b> <br>\
+779 <b>/proc/cpuinfo</b> processor	: 28<br>\
+780 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+781 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+782 <b>/proc/cpuinfo</b> model		: 63<br>\
+783 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+784 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+785 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+786 <b>/proc/cpuinfo</b> cpu MHz		: 2500.168<br>\
+787 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+788 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+789 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+790 <b>/proc/cpuinfo</b> core id		: 0<br>\
+791 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+792 <b>/proc/cpuinfo</b> apicid		: 1<br>\
+793 <b>/proc/cpuinfo</b> initial apicid	: 1<br>\
+794 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+795 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+796 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+797 <b>/proc/cpuinfo</b> wp		: yes<br>\
+798 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+799 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+800 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+801 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+802 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+803 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+804 <b>/proc/cpuinfo</b> power management:<br>\
+805 <b>/proc/cpuinfo</b> <br>\
+806 <b>/proc/cpuinfo</b> processor	: 29<br>\
+807 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+808 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+809 <b>/proc/cpuinfo</b> model		: 63<br>\
+810 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+811 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+812 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+813 <b>/proc/cpuinfo</b> cpu MHz		: 2501.326<br>\
+814 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+815 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+816 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+817 <b>/proc/cpuinfo</b> core id		: 1<br>\
+818 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+819 <b>/proc/cpuinfo</b> apicid		: 3<br>\
+820 <b>/proc/cpuinfo</b> initial apicid	: 3<br>\
+821 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+822 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+823 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+824 <b>/proc/cpuinfo</b> wp		: yes<br>\
+825 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+826 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+827 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+828 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+829 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+830 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+831 <b>/proc/cpuinfo</b> power management:<br>\
+832 <b>/proc/cpuinfo</b> <br>\
+833 <b>/proc/cpuinfo</b> processor	: 30<br>\
+834 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+835 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+836 <b>/proc/cpuinfo</b> model		: 63<br>\
+837 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+838 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+839 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+840 <b>/proc/cpuinfo</b> cpu MHz		: 2502.244<br>\
+841 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+842 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+843 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+844 <b>/proc/cpuinfo</b> core id		: 2<br>\
+845 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+846 <b>/proc/cpuinfo</b> apicid		: 5<br>\
+847 <b>/proc/cpuinfo</b> initial apicid	: 5<br>\
+848 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+849 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+850 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+851 <b>/proc/cpuinfo</b> wp		: yes<br>\
+852 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+853 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+854 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+855 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+856 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+857 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+858 <b>/proc/cpuinfo</b> power management:<br>\
+859 <b>/proc/cpuinfo</b> <br>\
+860 <b>/proc/cpuinfo</b> processor	: 31<br>\
+861 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+862 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+863 <b>/proc/cpuinfo</b> model		: 63<br>\
+864 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+865 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+866 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+867 <b>/proc/cpuinfo</b> cpu MHz		: 2502.166<br>\
+868 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+869 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+870 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+871 <b>/proc/cpuinfo</b> core id		: 3<br>\
+872 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+873 <b>/proc/cpuinfo</b> apicid		: 7<br>\
+874 <b>/proc/cpuinfo</b> initial apicid	: 7<br>\
+875 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+876 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+877 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+878 <b>/proc/cpuinfo</b> wp		: yes<br>\
+879 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+880 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+881 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+882 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+883 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+884 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+885 <b>/proc/cpuinfo</b> power management:<br>\
+886 <b>/proc/cpuinfo</b> <br>\
+887 <b>/proc/cpuinfo</b> processor	: 32<br>\
+888 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+889 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+890 <b>/proc/cpuinfo</b> model		: 63<br>\
+891 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+892 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+893 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+894 <b>/proc/cpuinfo</b> cpu MHz		: 2502.944<br>\
+895 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+896 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+897 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+898 <b>/proc/cpuinfo</b> core id		: 4<br>\
+899 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+900 <b>/proc/cpuinfo</b> apicid		: 9<br>\
+901 <b>/proc/cpuinfo</b> initial apicid	: 9<br>\
+902 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+903 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+904 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+905 <b>/proc/cpuinfo</b> wp		: yes<br>\
+906 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+907 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+908 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+909 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+910 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+911 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+912 <b>/proc/cpuinfo</b> power management:<br>\
+913 <b>/proc/cpuinfo</b> <br>\
+914 <b>/proc/cpuinfo</b> processor	: 33<br>\
+915 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+916 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+917 <b>/proc/cpuinfo</b> model		: 63<br>\
+918 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+919 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+920 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+921 <b>/proc/cpuinfo</b> cpu MHz		: 2503.387<br>\
+922 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+923 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+924 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+925 <b>/proc/cpuinfo</b> core id		: 5<br>\
+926 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+927 <b>/proc/cpuinfo</b> apicid		: 11<br>\
+928 <b>/proc/cpuinfo</b> initial apicid	: 11<br>\
+929 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+930 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+931 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+932 <b>/proc/cpuinfo</b> wp		: yes<br>\
+933 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+934 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+935 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+936 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+937 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+938 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+939 <b>/proc/cpuinfo</b> power management:<br>\
+940 <b>/proc/cpuinfo</b> <br>\
+941 <b>/proc/cpuinfo</b> processor	: 34<br>\
+942 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+943 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+944 <b>/proc/cpuinfo</b> model		: 63<br>\
+945 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+946 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+947 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+948 <b>/proc/cpuinfo</b> cpu MHz		: 2502.364<br>\
+949 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+950 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+951 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+952 <b>/proc/cpuinfo</b> core id		: 6<br>\
+953 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+954 <b>/proc/cpuinfo</b> apicid		: 13<br>\
+955 <b>/proc/cpuinfo</b> initial apicid	: 13<br>\
+956 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+957 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+958 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+959 <b>/proc/cpuinfo</b> wp		: yes<br>\
+960 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+961 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+962 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+963 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+964 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+965 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+966 <b>/proc/cpuinfo</b> power management:<br>\
+967 <b>/proc/cpuinfo</b> <br>\
+968 <b>/proc/cpuinfo</b> processor	: 35<br>\
+969 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+970 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+971 <b>/proc/cpuinfo</b> model		: 63<br>\
+972 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+973 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+974 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+975 <b>/proc/cpuinfo</b> cpu MHz		: 2501.654<br>\
+976 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+977 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+978 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+979 <b>/proc/cpuinfo</b> core id		: 8<br>\
+980 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+981 <b>/proc/cpuinfo</b> apicid		: 17<br>\
+982 <b>/proc/cpuinfo</b> initial apicid	: 17<br>\
+983 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+984 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+985 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+986 <b>/proc/cpuinfo</b> wp		: yes<br>\
+987 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+988 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+989 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+990 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+991 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+992 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+993 <b>/proc/cpuinfo</b> power management:<br>\
+994 <b>/proc/cpuinfo</b> <br>\
+995 <b>/proc/cpuinfo</b> processor	: 36<br>\
+996 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+997 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+998 <b>/proc/cpuinfo</b> model		: 63<br>\
+999 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1000 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1001 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1002 <b>/proc/cpuinfo</b> cpu MHz		: 2503.110<br>\
+1003 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1004 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1005 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1006 <b>/proc/cpuinfo</b> core id		: 9<br>\
+1007 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1008 <b>/proc/cpuinfo</b> apicid		: 19<br>\
+1009 <b>/proc/cpuinfo</b> initial apicid	: 19<br>\
+1010 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1011 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1012 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1013 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1014 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1015 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1016 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+1017 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1018 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1019 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1020 <b>/proc/cpuinfo</b> power management:<br>\
+1021 <b>/proc/cpuinfo</b> <br>\
+1022 <b>/proc/cpuinfo</b> processor	: 37<br>\
+1023 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1024 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1025 <b>/proc/cpuinfo</b> model		: 63<br>\
+1026 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1027 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1028 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1029 <b>/proc/cpuinfo</b> cpu MHz		: 2503.221<br>\
+1030 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1031 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1032 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1033 <b>/proc/cpuinfo</b> core id		: 10<br>\
+1034 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1035 <b>/proc/cpuinfo</b> apicid		: 21<br>\
+1036 <b>/proc/cpuinfo</b> initial apicid	: 21<br>\
+1037 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1038 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1039 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1040 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1041 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1042 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1043 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+1044 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1045 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1046 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1047 <b>/proc/cpuinfo</b> power management:<br>\
+1048 <b>/proc/cpuinfo</b> <br>\
+1049 <b>/proc/cpuinfo</b> processor	: 38<br>\
+1050 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1051 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1052 <b>/proc/cpuinfo</b> model		: 63<br>\
+1053 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1054 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1055 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1056 <b>/proc/cpuinfo</b> cpu MHz		: 2503.612<br>\
+1057 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1058 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1059 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1060 <b>/proc/cpuinfo</b> core id		: 11<br>\
+1061 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1062 <b>/proc/cpuinfo</b> apicid		: 23<br>\
+1063 <b>/proc/cpuinfo</b> initial apicid	: 23<br>\
+1064 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1065 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1066 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1067 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1068 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1069 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1070 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+1071 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1072 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1073 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1074 <b>/proc/cpuinfo</b> power management:<br>\
+1075 <b>/proc/cpuinfo</b> <br>\
+1076 <b>/proc/cpuinfo</b> processor	: 39<br>\
+1077 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1078 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1079 <b>/proc/cpuinfo</b> model		: 63<br>\
+1080 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1081 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1082 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1083 <b>/proc/cpuinfo</b> cpu MHz		: 2499.244<br>\
+1084 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1085 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1086 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1087 <b>/proc/cpuinfo</b> core id		: 12<br>\
+1088 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1089 <b>/proc/cpuinfo</b> apicid		: 25<br>\
+1090 <b>/proc/cpuinfo</b> initial apicid	: 25<br>\
+1091 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1092 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1093 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1094 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1095 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1096 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1097 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+1098 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1099 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1100 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1101 <b>/proc/cpuinfo</b> power management:<br>\
+1102 <b>/proc/cpuinfo</b> <br>\
+1103 <b>/proc/cpuinfo</b> processor	: 40<br>\
+1104 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1105 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1106 <b>/proc/cpuinfo</b> model		: 63<br>\
+1107 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1108 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1109 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1110 <b>/proc/cpuinfo</b> cpu MHz		: 2502.045<br>\
+1111 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1112 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1113 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1114 <b>/proc/cpuinfo</b> core id		: 13<br>\
+1115 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1116 <b>/proc/cpuinfo</b> apicid		: 27<br>\
+1117 <b>/proc/cpuinfo</b> initial apicid	: 27<br>\
+1118 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1119 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1120 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1121 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1122 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1123 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1124 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+1125 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1126 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1127 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1128 <b>/proc/cpuinfo</b> power management:<br>\
+1129 <b>/proc/cpuinfo</b> <br>\
+1130 <b>/proc/cpuinfo</b> processor	: 41<br>\
+1131 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1132 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1133 <b>/proc/cpuinfo</b> model		: 63<br>\
+1134 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1135 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1136 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1137 <b>/proc/cpuinfo</b> cpu MHz		: 2502.348<br>\
+1138 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1139 <b>/proc/cpuinfo</b> physical id	: 0<br>\
+1140 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1141 <b>/proc/cpuinfo</b> core id		: 14<br>\
+1142 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1143 <b>/proc/cpuinfo</b> apicid		: 29<br>\
+1144 <b>/proc/cpuinfo</b> initial apicid	: 29<br>\
+1145 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1146 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1147 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1148 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1149 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1150 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1151 <b>/proc/cpuinfo</b> bogomips	: 3999.93<br>\
+1152 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1153 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1154 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1155 <b>/proc/cpuinfo</b> power management:<br>\
+1156 <b>/proc/cpuinfo</b> <br>\
+1157 <b>/proc/cpuinfo</b> processor	: 42<br>\
+1158 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1159 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1160 <b>/proc/cpuinfo</b> model		: 63<br>\
+1161 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1162 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1163 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1164 <b>/proc/cpuinfo</b> cpu MHz		: 2499.984<br>\
+1165 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1166 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1167 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1168 <b>/proc/cpuinfo</b> core id		: 0<br>\
+1169 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1170 <b>/proc/cpuinfo</b> apicid		: 33<br>\
+1171 <b>/proc/cpuinfo</b> initial apicid	: 33<br>\
+1172 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1173 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1174 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1175 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1176 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1177 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1178 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1179 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1180 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1181 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1182 <b>/proc/cpuinfo</b> power management:<br>\
+1183 <b>/proc/cpuinfo</b> <br>\
+1184 <b>/proc/cpuinfo</b> processor	: 43<br>\
+1185 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1186 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1187 <b>/proc/cpuinfo</b> model		: 63<br>\
+1188 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1189 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1190 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1191 <b>/proc/cpuinfo</b> cpu MHz		: 2501.940<br>\
+1192 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1193 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1194 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1195 <b>/proc/cpuinfo</b> core id		: 1<br>\
+1196 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1197 <b>/proc/cpuinfo</b> apicid		: 35<br>\
+1198 <b>/proc/cpuinfo</b> initial apicid	: 35<br>\
+1199 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1200 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1201 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1202 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1203 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1204 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1205 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1206 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1207 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1208 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1209 <b>/proc/cpuinfo</b> power management:<br>\
+1210 <b>/proc/cpuinfo</b> <br>\
+1211 <b>/proc/cpuinfo</b> processor	: 44<br>\
+1212 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1213 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1214 <b>/proc/cpuinfo</b> model		: 63<br>\
+1215 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1216 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1217 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1218 <b>/proc/cpuinfo</b> cpu MHz		: 2501.326<br>\
+1219 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1220 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1221 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1222 <b>/proc/cpuinfo</b> core id		: 2<br>\
+1223 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1224 <b>/proc/cpuinfo</b> apicid		: 37<br>\
+1225 <b>/proc/cpuinfo</b> initial apicid	: 37<br>\
+1226 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1227 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1228 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1229 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1230 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1231 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1232 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1233 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1234 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1235 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1236 <b>/proc/cpuinfo</b> power management:<br>\
+1237 <b>/proc/cpuinfo</b> <br>\
+1238 <b>/proc/cpuinfo</b> processor	: 45<br>\
+1239 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1240 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1241 <b>/proc/cpuinfo</b> model		: 63<br>\
+1242 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1243 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1244 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1245 <b>/proc/cpuinfo</b> cpu MHz		: 2502.720<br>\
+1246 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1247 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1248 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1249 <b>/proc/cpuinfo</b> core id		: 3<br>\
+1250 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1251 <b>/proc/cpuinfo</b> apicid		: 39<br>\
+1252 <b>/proc/cpuinfo</b> initial apicid	: 39<br>\
+1253 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1254 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1255 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1256 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1257 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1258 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1259 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1260 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1261 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1262 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1263 <b>/proc/cpuinfo</b> power management:<br>\
+1264 <b>/proc/cpuinfo</b> <br>\
+1265 <b>/proc/cpuinfo</b> processor	: 46<br>\
+1266 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1267 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1268 <b>/proc/cpuinfo</b> model		: 63<br>\
+1269 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1270 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1271 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1272 <b>/proc/cpuinfo</b> cpu MHz		: 2502.069<br>\
+1273 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1274 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1275 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1276 <b>/proc/cpuinfo</b> core id		: 4<br>\
+1277 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1278 <b>/proc/cpuinfo</b> apicid		: 41<br>\
+1279 <b>/proc/cpuinfo</b> initial apicid	: 41<br>\
+1280 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1281 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1282 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1283 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1284 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1285 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1286 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1287 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1288 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1289 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1290 <b>/proc/cpuinfo</b> power management:<br>\
+1291 <b>/proc/cpuinfo</b> <br>\
+1292 <b>/proc/cpuinfo</b> processor	: 47<br>\
+1293 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1294 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1295 <b>/proc/cpuinfo</b> model		: 63<br>\
+1296 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1297 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1298 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1299 <b>/proc/cpuinfo</b> cpu MHz		: 2503.917<br>\
+1300 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1301 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1302 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1303 <b>/proc/cpuinfo</b> core id		: 5<br>\
+1304 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1305 <b>/proc/cpuinfo</b> apicid		: 43<br>\
+1306 <b>/proc/cpuinfo</b> initial apicid	: 43<br>\
+1307 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1308 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1309 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1310 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1311 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1312 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1313 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1314 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1315 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1316 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1317 <b>/proc/cpuinfo</b> power management:<br>\
+1318 <b>/proc/cpuinfo</b> <br>\
+1319 <b>/proc/cpuinfo</b> processor	: 48<br>\
+1320 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1321 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1322 <b>/proc/cpuinfo</b> model		: 63<br>\
+1323 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1324 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1325 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1326 <b>/proc/cpuinfo</b> cpu MHz		: 2500.823<br>\
+1327 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1328 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1329 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1330 <b>/proc/cpuinfo</b> core id		: 6<br>\
+1331 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1332 <b>/proc/cpuinfo</b> apicid		: 45<br>\
+1333 <b>/proc/cpuinfo</b> initial apicid	: 45<br>\
+1334 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1335 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1336 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1337 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1338 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1339 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1340 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1341 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1342 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1343 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1344 <b>/proc/cpuinfo</b> power management:<br>\
+1345 <b>/proc/cpuinfo</b> <br>\
+1346 <b>/proc/cpuinfo</b> processor	: 49<br>\
+1347 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1348 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1349 <b>/proc/cpuinfo</b> model		: 63<br>\
+1350 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1351 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1352 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1353 <b>/proc/cpuinfo</b> cpu MHz		: 2501.331<br>\
+1354 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1355 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1356 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1357 <b>/proc/cpuinfo</b> core id		: 8<br>\
+1358 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1359 <b>/proc/cpuinfo</b> apicid		: 49<br>\
+1360 <b>/proc/cpuinfo</b> initial apicid	: 49<br>\
+1361 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1362 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1363 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1364 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1365 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1366 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1367 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1368 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1369 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1370 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1371 <b>/proc/cpuinfo</b> power management:<br>\
+1372 <b>/proc/cpuinfo</b> <br>\
+1373 <b>/proc/cpuinfo</b> processor	: 50<br>\
+1374 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1375 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1376 <b>/proc/cpuinfo</b> model		: 63<br>\
+1377 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1378 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1379 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1380 <b>/proc/cpuinfo</b> cpu MHz		: 2502.739<br>\
+1381 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1382 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1383 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1384 <b>/proc/cpuinfo</b> core id		: 9<br>\
+1385 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1386 <b>/proc/cpuinfo</b> apicid		: 51<br>\
+1387 <b>/proc/cpuinfo</b> initial apicid	: 51<br>\
+1388 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1389 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1390 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1391 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1392 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1393 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1394 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1395 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1396 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1397 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1398 <b>/proc/cpuinfo</b> power management:<br>\
+1399 <b>/proc/cpuinfo</b> <br>\
+1400 <b>/proc/cpuinfo</b> processor	: 51<br>\
+1401 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1402 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1403 <b>/proc/cpuinfo</b> model		: 63<br>\
+1404 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1405 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1406 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1407 <b>/proc/cpuinfo</b> cpu MHz		: 2502.556<br>\
+1408 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1409 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1410 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1411 <b>/proc/cpuinfo</b> core id		: 10<br>\
+1412 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1413 <b>/proc/cpuinfo</b> apicid		: 53<br>\
+1414 <b>/proc/cpuinfo</b> initial apicid	: 53<br>\
+1415 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1416 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1417 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1418 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1419 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1420 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1421 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1422 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1423 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1424 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1425 <b>/proc/cpuinfo</b> power management:<br>\
+1426 <b>/proc/cpuinfo</b> <br>\
+1427 <b>/proc/cpuinfo</b> processor	: 52<br>\
+1428 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1429 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1430 <b>/proc/cpuinfo</b> model		: 63<br>\
+1431 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1432 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1433 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1434 <b>/proc/cpuinfo</b> cpu MHz		: 2500.729<br>\
+1435 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1436 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1437 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1438 <b>/proc/cpuinfo</b> core id		: 11<br>\
+1439 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1440 <b>/proc/cpuinfo</b> apicid		: 55<br>\
+1441 <b>/proc/cpuinfo</b> initial apicid	: 55<br>\
+1442 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1443 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1444 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1445 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1446 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1447 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1448 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1449 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1450 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1451 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1452 <b>/proc/cpuinfo</b> power management:<br>\
+1453 <b>/proc/cpuinfo</b> <br>\
+1454 <b>/proc/cpuinfo</b> processor	: 53<br>\
+1455 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1456 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1457 <b>/proc/cpuinfo</b> model		: 63<br>\
+1458 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1459 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1460 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1461 <b>/proc/cpuinfo</b> cpu MHz		: 2500.047<br>\
+1462 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1463 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1464 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1465 <b>/proc/cpuinfo</b> core id		: 12<br>\
+1466 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1467 <b>/proc/cpuinfo</b> apicid		: 57<br>\
+1468 <b>/proc/cpuinfo</b> initial apicid	: 57<br>\
+1469 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1470 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1471 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1472 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1473 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1474 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1475 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1476 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1477 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1478 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1479 <b>/proc/cpuinfo</b> power management:<br>\
+1480 <b>/proc/cpuinfo</b> <br>\
+1481 <b>/proc/cpuinfo</b> processor	: 54<br>\
+1482 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1483 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1484 <b>/proc/cpuinfo</b> model		: 63<br>\
+1485 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1486 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1487 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1488 <b>/proc/cpuinfo</b> cpu MHz		: 2499.959<br>\
+1489 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1490 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1491 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1492 <b>/proc/cpuinfo</b> core id		: 13<br>\
+1493 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1494 <b>/proc/cpuinfo</b> apicid		: 59<br>\
+1495 <b>/proc/cpuinfo</b> initial apicid	: 59<br>\
+1496 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1497 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1498 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1499 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1500 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1501 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1502 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1503 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1504 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1505 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1506 <b>/proc/cpuinfo</b> power management:<br>\
+1507 <b>/proc/cpuinfo</b> <br>\
+1508 <b>/proc/cpuinfo</b> processor	: 55<br>\
+1509 <b>/proc/cpuinfo</b> vendor_id	: GenuineIntel<br>\
+1510 <b>/proc/cpuinfo</b> cpu family	: 6<br>\
+1511 <b>/proc/cpuinfo</b> model		: 63<br>\
+1512 <b>/proc/cpuinfo</b> model name	: Intel(R) Xeon(R) CPU E5-2683 v3 @ 2.00GHz<br>\
+1513 <b>/proc/cpuinfo</b> stepping	: 2<br>\
+1514 <b>/proc/cpuinfo</b> microcode	: 0x3d<br>\
+1515 <b>/proc/cpuinfo</b> cpu MHz		: 2500.698<br>\
+1516 <b>/proc/cpuinfo</b> cache size	: 35840 KB<br>\
+1517 <b>/proc/cpuinfo</b> physical id	: 1<br>\
+1518 <b>/proc/cpuinfo</b> siblings	: 28<br>\
+1519 <b>/proc/cpuinfo</b> core id		: 14<br>\
+1520 <b>/proc/cpuinfo</b> cpu cores	: 14<br>\
+1521 <b>/proc/cpuinfo</b> apicid		: 61<br>\
+1522 <b>/proc/cpuinfo</b> initial apicid	: 61<br>\
+1523 <b>/proc/cpuinfo</b> fpu		: yes<br>\
+1524 <b>/proc/cpuinfo</b> fpu_exception	: yes<br>\
+1525 <b>/proc/cpuinfo</b> cpuid level	: 15<br>\
+1526 <b>/proc/cpuinfo</b> wp		: yes<br>\
+1527 <b>/proc/cpuinfo</b> flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb invpcid_single pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts flush_l1d<br>\
+1528 <b>/proc/cpuinfo</b> bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf<br>\
+1529 <b>/proc/cpuinfo</b> bogomips	: 4001.48<br>\
+1530 <b>/proc/cpuinfo</b> clflush size	: 64<br>\
+1531 <b>/proc/cpuinfo</b> cache_alignment	: 64<br>\
+1532 <b>/proc/cpuinfo</b> address sizes	: 46 bits physical<br>\
+1533 <b>/proc/cpuinfo</b> power management:<br>\
+1534 <b>/proc/cpuinfo</b> <br>\
+1535 <b>/proc/meminfo</b> <br>\
+1536 <b>/proc/meminfo</b> MemTotal:       264032292 kB<br>\
+1537 <b>/proc/meminfo</b> MemFree:        35873772 kB<br>\
+1538 <b>/proc/meminfo</b> MemAvailable:   191535528 kB<br>\
+1539 <b>/proc/meminfo</b> Buffers:          456288 kB<br>\
+1540 <b>/proc/meminfo</b> Cached:         221128924 kB<br>\
+1541 <b>/proc/meminfo</b> SwapCached:         5932 kB<br>\
+1542 <b>/proc/meminfo</b> Active:         160130400 kB<br>\
+1543 <b>/proc/meminfo</b> Inactive:       61835292 kB<br>\
+1544 <b>/proc/meminfo</b> Active(anon):   68676408 kB<br>\
+1545 <b>/proc/meminfo</b> Inactive(anon):   502524 kB<br>\
+1546 <b>/proc/meminfo</b> Active(file):   91453992 kB<br>\
+1547 <b>/proc/meminfo</b> Inactive(file): 61332768 kB<br>\
+1548 <b>/proc/meminfo</b> Unevictable:        8444 kB<br>\
+1549 <b>/proc/meminfo</b> Mlocked:            8444 kB<br>\
+1550 <b>/proc/meminfo</b> SwapTotal:      58609660 kB<br>\
+1551 <b>/proc/meminfo</b> SwapFree:       58296060 kB<br>\
+1552 <b>/proc/meminfo</b> Dirty:                80 kB<br>\
+1553 <b>/proc/meminfo</b> Writeback:             0 kB<br>\
+1554 <b>/proc/meminfo</b> AnonPages:        385504 kB<br>\
+1555 <b>/proc/meminfo</b> Mapped:         68807040 kB<br>\
+1556 <b>/proc/meminfo</b> Shmem:          68794916 kB<br>\
+1557 <b>/proc/meminfo</b> Slab:            5194456 kB<br>\
+1558 <b>/proc/meminfo</b> SReclaimable:    4725036 kB<br>\
+1559 <b>/proc/meminfo</b> SUnreclaim:       469420 kB<br>\
+1560 <b>/proc/meminfo</b> KernelStack:       13840 kB<br>\
+1561 <b>/proc/meminfo</b> PageTables:       285352 kB<br>\
+1562 <b>/proc/meminfo</b> NFS_Unstable:          0 kB<br>\
+1563 <b>/proc/meminfo</b> Bounce:                0 kB<br>\
+1564 <b>/proc/meminfo</b> WritebackTmp:          0 kB<br>\
+1565 <b>/proc/meminfo</b> CommitLimit:    190625804 kB<br>\
+1566 <b>/proc/meminfo</b> Committed_AS:   72168412 kB<br>\
+1567 <b>/proc/meminfo</b> VmallocTotal:   34359738367 kB<br>\
+1568 <b>/proc/meminfo</b> VmallocUsed:           0 kB<br>\
+1569 <b>/proc/meminfo</b> VmallocChunk:          0 kB<br>\
+1570 <b>/proc/meminfo</b> HardwareCorrupted:     0 kB<br>\
+1571 <b>/proc/meminfo</b> AnonHugePages:     22528 kB<br>\
+1572 <b>/proc/meminfo</b> ShmemHugePages:        0 kB<br>\
+1573 <b>/proc/meminfo</b> ShmemPmdMapped:        0 kB<br>\
+1574 <b>/proc/meminfo</b> CmaTotal:              0 kB<br>\
+1575 <b>/proc/meminfo</b> CmaFree:               0 kB<br>\
+1576 <b>/proc/meminfo</b> HugePages_Total:       0<br>\
+1577 <b>/proc/meminfo</b> HugePages_Free:        0<br>\
+1578 <b>/proc/meminfo</b> HugePages_Rsvd:        0<br>\
+1579 <b>/proc/meminfo</b> HugePages_Surp:        0<br>\
+1580 <b>/proc/meminfo</b> Hugepagesize:       2048 kB<br>\
+1581 <b>/proc/meminfo</b> DirectMap4k:      330868 kB<br>\
+1582 <b>/proc/meminfo</b> DirectMap2M:     5851136 kB<br>\
+1583 <b>/proc/meminfo</b> DirectMap1G:    264241152 kB<br>\
+1584 <b>/proc/stat</b> <br>\
+1585 <b>/proc/stat</b> cpu  101306254 5284 33908762 8640650226 7441354 0 61610 0 0 0<br>\
+1586 <b>/proc/stat</b> cpu0 2044152 707 622670 153902378 185810 0 1010 0 0 0<br>\
+1587 <b>/proc/stat</b> cpu1 1932169 0 655502 154043005 207963 0 1241 0 0 0<br>\
+1588 <b>/proc/stat</b> cpu2 1879468 354 625142 154152200 185148 0 1258 0 0 0<br>\
+1589 <b>/proc/stat</b> cpu3 1877045 354 632046 154146139 186489 0 1200 0 0 0<br>\
+1590 <b>/proc/stat</b> cpu4 1871336 0 630756 154155503 185875 0 982 0 0 0<br>\
+1591 <b>/proc/stat</b> cpu5 1867417 103 636232 154143857 193639 0 1162 0 0 0<br>\
+1592 <b>/proc/stat</b> cpu6 1882196 216 626233 154145118 190263 0 1042 0 0 0<br>\
+1593 <b>/proc/stat</b> cpu7 1874572 0 626818 154157970 184758 0 1126 0 0 0<br>\
+1594 <b>/proc/stat</b> cpu8 1879699 0 630645 154144586 189687 0 1290 0 0 0<br>\
+1595 <b>/proc/stat</b> cpu9 1856892 1 629035 154175378 184581 0 1114 0 0 0<br>\
+1596 <b>/proc/stat</b> cpu10 1874264 35 622356 154167381 178447 0 1175 0 0 0<br>\
+1597 <b>/proc/stat</b> cpu11 1884703 0 629419 154147038 185501 0 1177 0 0 0<br>\
+1598 <b>/proc/stat</b> cpu12 1880193 0 619312 154163781 181049 0 1278 0 0 0<br>\
+1599 <b>/proc/stat</b> cpu13 1862756 182 616304 154190101 179025 0 963 0 0 0<br>\
+1600 <b>/proc/stat</b> cpu14 2085296 257 613273 153960712 179082 0 1010 0 0 0<br>\
+1601 <b>/proc/stat</b> cpu15 1877626 60 615421 154170855 175628 0 874 0 0 0<br>\
+1602 <b>/proc/stat</b> cpu16 1866908 0 611082 154181899 174255 0 1154 0 0 0<br>\
+1603 <b>/proc/stat</b> cpu17 1844248 43 610543 154211299 171829 0 1018 0 0 0<br>\
+1604 <b>/proc/stat</b> cpu18 1858037 3 615858 154191968 173585 0 1096 0 0 0<br>\
+1605 <b>/proc/stat</b> cpu19 1864541 109 622848 154173027 178531 0 1057 0 0 0<br>\
+1606 <b>/proc/stat</b> cpu20 1876280 167 618569 154165665 174967 0 1060 0 0 0<br>\
+1607 <b>/proc/stat</b> cpu21 1848685 44 613186 154202576 175296 0 1002 0 0 0<br>\
+1608 <b>/proc/stat</b> cpu22 1854068 173 615480 154193203 176485 0 1184 0 0 0<br>\
+1609 <b>/proc/stat</b> cpu23 1846188 41 615849 154200686 175843 0 1061 0 0 0<br>\
+1610 <b>/proc/stat</b> cpu24 1845955 85 616951 154198376 179248 0 845 0 0 0<br>\
+1611 <b>/proc/stat</b> cpu25 1874855 43 617290 154178099 169726 0 1008 0 0 0<br>\
+1612 <b>/proc/stat</b> cpu26 1852218 335 612246 154205615 169078 0 1044 0 0 0<br>\
+1613 <b>/proc/stat</b> cpu27 1858594 82 612455 154202535 167160 0 1144 0 0 0<br>\
+1614 <b>/proc/stat</b> cpu28 1805671 0 609262 154329277 105056 0 912 0 0 0<br>\
+1615 <b>/proc/stat</b> cpu29 1812366 3 614806 154331700 95316 0 1052 0 0 0<br>\
+1616 <b>/proc/stat</b> cpu30 1774000 6 599270 154392375 90698 0 1158 0 0 0<br>\
+1617 <b>/proc/stat</b> cpu31 1791533 338 599658 154365527 91900 0 1388 0 0 0<br>\
+1618 <b>/proc/stat</b> cpu32 1732155 4 596650 154440660 85324 0 1255 0 0 0<br>\
+1619 <b>/proc/stat</b> cpu33 1727284 12 591033 154455527 81998 0 1006 0 0 0<br>\
+1620 <b>/proc/stat</b> cpu34 1717585 3 587229 154471118 79874 0 1132 0 0 0<br>\
+1621 <b>/proc/stat</b> cpu35 1715252 1 587820 154471546 79898 0 1296 0 0 0<br>\
+1622 <b>/proc/stat</b> cpu36 1731783 68 585858 154456677 78393 0 1503 0 0 0<br>\
+1623 <b>/proc/stat</b> cpu37 1706746 0 585537 154487451 76695 0 1046 0 0 0<br>\
+1624 <b>/proc/stat</b> cpu38 1729602 4 592719 154445835 80188 0 1191 0 0 0<br>\
+1625 <b>/proc/stat</b> cpu39 1733060 0 594743 154454705 75625 0 1036 0 0 0<br>\
+1626 <b>/proc/stat</b> cpu40 1717761 0 590785 154476880 71652 0 1168 0 0 0<br>\
+1627 <b>/proc/stat</b> cpu41 1774551 0 594769 154345373 136423 0 839 0 0 0<br>\
+1628 <b>/proc/stat</b> cpu42 1805914 40 580296 154374483 92214 0 925 0 0 0<br>\
+1629 <b>/proc/stat</b> cpu43 1745649 40 595647 154421638 88951 0 1098 0 0 0<br>\
+1630 <b>/proc/stat</b> cpu44 1729921 195 583127 154442935 79998 0 973 0 0 0<br>\
+1631 <b>/proc/stat</b> cpu45 1711376 2 589154 154467766 82619 0 1074 0 0 0<br>\
+1632 <b>/proc/stat</b> cpu46 1710621 183 582682 154481840 76892 0 1228 0 0 0<br>\
+1633 <b>/proc/stat</b> cpu47 1708098 40 580222 154470673 73096 0 1268 0 0 0<br>\
+1634 <b>/proc/stat</b> cpu48 1704319 0 585897 154486384 74849 0 1097 0 0 0<br>\
+1635 <b>/proc/stat</b> cpu49 1696908 6 579207 154506126 69424 0 1098 0 0 0<br>\
+1636 <b>/proc/stat</b> cpu50 1691495 1 578412 154514633 68387 0 1152 0 0 0<br>\
+1637 <b>/proc/stat</b> cpu51 1684494 255 578406 154519915 67337 0 983 0 0 0<br>\
+1638 <b>/proc/stat</b> cpu52 1683249 171 576196 154531081 65178 0 934 0 0 0<br>\
+1639 <b>/proc/stat</b> cpu53 1710562 236 580204 154499938 63847 0 922 0 0 0<br>\
+1640 <b>/proc/stat</b> cpu54 1773240 75 589112 154362844 125343 0 1089 0 0 0<br>\
+1641 <b>/proc/stat</b> cpu55 1760673 188 586515 154374344 125207 0 1189 0 0 0<br>\
+1642 <b>/proc/stat</b> intr 17810815546 19 0 0 0 0 0 0 0 1 4 0 0 0 0 0 0 0 0 133 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39857898 39721882 38560319 38517962 38905925 38584411 38394772 38246388 38560238 38069260 36190491 36059442 35730985 22222437 13863964 38457810 38793939 38685605 38858379 38709009 38582604 38158871 38970710 38728056 38369370 38874114 36065655 23240874 22646219 13217374 13503080 7401135 13771684 8045726 8355803 0 0 8912451 8892351 8841567 9596194 9003779 9406366 8655711 9139267 8542846 8103452 7373085 7355059 7127307 7328507 7223391 7077830 7118456 7144272 6958221 7227872 6875273 6741261 6923377 6738104 5511586 4576081 4274019 4439133 4342758 4847087 4465451 4248312 4467424 4318433 4519469 4127863 4240045 4191706 3996171 4165509 3842913 4221971 4018372 3916243 4156402 3879601 3872236 3881821 3845388 3762697 3738169 3664556 0 1761450 782523 787854 789187 787583 1044407 782693 784657 782680 779929 781658 779931 2344872 780041 787317 781210 785556 779790 779796 779929 781912 779777 779643 781791 779684 780238 780209 780913 781817 787114 779812 1035495 789641 785918 780195 780164 782319 782017 781239 779955 779916 785005 787249 779566 782724 780629 780121 780946 780757 779659 779922 784259 779766 780184 779841 780470 1 0 782110 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 779085 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 778643 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>\
+1643 <b>/proc/stat</b>  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0<br>\
+1644 <b>/proc/stat</b> ctxt 39628933429<br>\
+1645 <b>/proc/stat</b> btime 1546634164<br>\
+1646 <b>/proc/stat</b> processes 740430<br>\
+1647 <b>/proc/stat</b> procs_running 1<br>\
+1648 <b>/proc/stat</b> procs_blocked 0<br>\
+1649 <b>/proc/stat</b> softirq 1788042047 8 584845351 606100 74325283 0 0 5002 675772388 0 452487915<br>\
+1650 <b>/proc/version</b> <br>\
+1651 <b>/proc/version</b> Linux version 4.15.0-42-generic (buildd@lgw01-amd64-023) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.10)) #45~16.04.1-Ubuntu SMP Mon Nov 19 13:02:27 UTC 2018<br>\
+1652 <b>/proc/net/dev</b> <br>\
+1653 <b>/proc/net/dev</b> Inter-|   Receive                                                |  Transmit<br>\
+1654 <b>/proc/net/dev</b>  face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed<br>\
+1655 <b>/proc/net/dev</b> docker0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0<br>\
+1656 <b>/proc/net/dev</b>     lo: 3595037175 4680464    0    0    0     0          0         0 3595037175 4680464    0    0    0     0       0          0<br>\
+1657 <b>/proc/net/dev</b> virbr0:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0<br>\
+1658 <b>/proc/net/dev</b>   eno1: 282256962 2910946    0    1    0     0          0   2456948 52352765  371319    0    0    0     0       0          0<br>\
+1659 <b>/proc/net/dev</b> virbr0-nic:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0<br>\
+1660 <b>/proc/net/dev</b>   eno2:  208020    3467    0    0    0     0          0         0    31036     442    0    0    0     0       0          0<br>\
+1661 <b>/proc/diskinfo</b> <br>\
+1662 <b>/proc/diskstats</b> <br>\
+1663 <b>/proc/diskstats</b>    7       0 loop0 0 0 0 0 0 0 0 0 0 0 0<br>\
+1664 <b>/proc/diskstats</b>    7       1 loop1 0 0 0 0 0 0 0 0 0 0 0<br>\
+1665 <b>/proc/diskstats</b>    7       2 loop2 0 0 0 0 0 0 0 0 0 0 0<br>\
+1666 <b>/proc/diskstats</b>    7       3 loop3 0 0 0 0 0 0 0 0 0 0 0<br>\
+1667 <b>/proc/diskstats</b>    7       4 loop4 0 0 0 0 0 0 0 0 0 0 0<br>\
+1668 <b>/proc/diskstats</b>    7       5 loop5 0 0 0 0 0 0 0 0 0 0 0<br>\
+1669 <b>/proc/diskstats</b>    7       6 loop6 0 0 0 0 0 0 0 0 0 0 0<br>\
+1670 <b>/proc/diskstats</b>    7       7 loop7 0 0 0 0 0 0 0 0 0 0 0<br>\
+1671 <b>/proc/diskstats</b>  259       0 nvme0n1 496354450 61 15429884616 74309000 570003305 150425436 25227164096 239341948 0 8442896 300533688<br>\
+1672 <b>/proc/diskstats</b>    8       0 sda 186074 4290 4548928 779108 433045 348256 17757750 763876 0 92340 1132612<br>\
+1673 <b>/proc/diskstats</b>    8       1 sda1 354 0 11386 1508 14 1 30 0 0 152 920<br>\
+1674 <b>/proc/diskstats</b>    8       2 sda2 2 0 4 12 0 0 0 0 0 0 0<br>\
+1675 <b>/proc/diskstats</b>    8       5 sda5 185553 4290 4528970 776848 433031 348255 17757720 763876 0 92508 1131356<br>\
+1676 <b>/proc/diskstats</b>    8      16 sdb 9155361 20 2203647679 4793296 333688089 21477 20369250944 85125024 0 12879320 57431108<br>\
+1677 <b>/proc/diskstats</b>  253       0 dm-0 184189 0 4468394 952600 699431 0 17125568 1098040 0 186136 2050680<br>\
+1678 <b>/proc/diskstats</b>  253       1 dm-1 5526 0 46184 33852 79019 0 632152 756288 0 33008 790148<br>\
+1679 <b>/sbin/multipath</b> <br>\
+1680 <b>/dev/mapper</b> <br>\
+1681 <b>/dev/mapper</b> total 0<br>\
+1682 <b>/dev/mapper</b> crw------- 1 root root 10<br>\
+1683 <b>/dev/mapper</b> lrwxrwxrwx 1 root root       7 Jan  4 15:37 smblade01--vg-root -> ../dm-0<br>\
+1684 <b>/dev/mapper</b> lrwxrwxrwx 1 root root       7 Jan  4 15:37 smblade01--vg-swap_1 -> ../dm-1<br>\
+1685 <b>/dev/mpath</b> <br>\
+1686 <b>/dev/dm-*</b> <br>\
+1687 <b>/dev/dm-*</b> brw-rw---- 1 root disk 253<br>\
+1688 <b>/dev/dm-*</b> brw-rw---- 1 root disk 253<br>\
+1689 <b>/dev/md*</b> <br>\
+1690 <b>/dev/sd*</b> <br>\
+1691 <b>/dev/sd*</b> brw-rw---- 1 root disk 8<br>\
+1692 <b>/dev/sd*</b> brw-rw---- 1 root disk 8<br>\
+1693 <b>/dev/sd*</b> brw-rw---- 1 root disk 8<br>\
+1694 <b>/dev/sd*</b> brw-rw---- 1 root disk 8<br>\
+1695 <b>/dev/sd*</b> brw-rw---- 1 root disk 8<br>\
+1696 <b>/proc/partitions</b> <br>\
+1697 <b>/proc/partitions</b> major minor  #blocks  name<br>\
+1698 <b>/proc/partitions</b> <br>\
+1699 <b>/proc/partitions</b>  259        0  366292584 nvme0n1<br>\
+1700 <b>/proc/partitions</b>    8        0 1756835840 sda<br>\
+1701 <b>/proc/partitions</b>    8        1     248832 sda1<br>\
+1702 <b>/proc/partitions</b>    8        2          1 sda2<br>\
+1703 <b>/proc/partitions</b>    8        5 1756583936 sda5<br>\
+1704 <b>/proc/partitions</b>    8       16 1875374424 sdb<br>\
+1705 <b>/proc/partitions</b>  253        0 1697972224 dm-0<br>\
+1706 <b>/proc/partitions</b>  253        1   58609664 dm-1<br>\
+1707 <b>/proc/1/stat</b> <br>\
+1708 <b>/proc/1/stat</b> 1 (systemd) S 0 1 1 0 -1 4194560 18952 281713138 80 2974 71 9214 63430373 12538257 20 0 1 0 7 38998016 1197 18446744073709551615 1 1 0 0 0 0 671173123 4096 1260 0 0 0 17 3 0 0 112 0 0 0 0 0 0 0 0 0 0<br>\
+1709 <b>/proc/1/statm</b> <br>\
+1710 <b>/proc/1/statm</b> 9521 1197 707 349 0 497 0<br>\
+1711 <b>/proc/net/rpc/nfs</b> <br>\
+1712 <b>/proc/net/rpc/nfsd</b> <br>\
+1713 <b>ifconfig</b> <br>\
+1714 <b>ifconfig</b> docker0   Link encap:Ethernet  HWaddr 02:42:91:6c:18:5b  <br>\
+1715 <b>ifconfig</b>           inet addr:172.17.0.1  Bcast:0.0.0.0  Mask:255.255.0.0<br>\
+1716 <b>ifconfig</b>           UP BROADCAST MULTICAST  MTU:1500  Metric:1<br>\
+1717 <b>ifconfig</b>           RX packets:0 errors:0 dropped:0 overruns:0 frame:0<br>\
+1718 <b>ifconfig</b>           TX packets:0 errors:0 dropped:0 overruns:0 carrier:0<br>\
+1719 <b>ifconfig</b>           collisions:0 txqueuelen:0 <br>\
+1720 <b>ifconfig</b>           RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)<br>\
+1721 <b>ifconfig</b> <br>\
+1722 <b>ifconfig</b> eno1      Link encap:Ethernet  HWaddr 0c:c4:7a:7e:7d:28  <br>\
+1723 <b>ifconfig</b>           inet addr:10.30.2.5  Bcast:10.30.2.255  Mask:255.255.255.0<br>\
+1724 <b>ifconfig</b>           inet6 addr: fe80::ec4:7aff:fe7e:7d28/64 Scope:Link<br>\
+1725 <b>ifconfig</b>           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1<br>\
+1726 <b>ifconfig</b>           RX packets:2910946 errors:0 dropped:1 overruns:0 frame:0<br>\
+1727 <b>ifconfig</b>           TX packets:371319 errors:0 dropped:0 overruns:0 carrier:0<br>\
+1728 <b>ifconfig</b>           collisions:0 txqueuelen:1000 <br>\
+1729 <b>ifconfig</b>           RX bytes:282256962 (282.2 MB)  TX bytes:52352765 (52.3 MB)<br>\
+1730 <b>ifconfig</b> <br>\
+1731 <b>ifconfig</b> eno2      Link encap:Ethernet  HWaddr 0c:c4:7a:7e:7d:29  <br>\
+1732 <b>ifconfig</b>           inet addr:172.16.0.1  Bcast:172.16.0.255  Mask:255.255.255.0<br>\
+1733 <b>ifconfig</b>           inet6 addr: fe80::ec4:7aff:fe7e:7d29/64 Scope:Link<br>\
+1734 <b>ifconfig</b>           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1<br>\
+1735 <b>ifconfig</b>           RX packets:3467 errors:0 dropped:0 overruns:0 frame:0<br>\
+1736 <b>ifconfig</b>           TX packets:442 errors:0 dropped:0 overruns:0 carrier:0<br>\
+1737 <b>ifconfig</b>           collisions:0 txqueuelen:1000 <br>\
+1738 <b>ifconfig</b>           RX bytes:208020 (208.0 KB)  TX bytes:31036 (31.0 KB)<br>\
+1739 <b>ifconfig</b> <br>\
+1740 <b>ifconfig</b> lo        Link encap:Local Loopback  <br>\
+1741 <b>ifconfig</b>           inet addr:127.0.0.1  Mask:255.0.0.0<br>\
+1742 <b>ifconfig</b>           inet6 addr: ::1/128 Scope:Host<br>\
+1743 <b>ifconfig</b>           UP LOOPBACK RUNNING  MTU:65536  Metric:1<br>\
+1744 <b>ifconfig</b>           RX packets:4680467 errors:0 dropped:0 overruns:0 frame:0<br>\
+1745 <b>ifconfig</b>           TX packets:4680467 errors:0 dropped:0 overruns:0 carrier:0<br>\
+1746 <b>ifconfig</b>           collisions:0 txqueuelen:1000 <br>\
+1747 <b>ifconfig</b>           RX bytes:3595039395 (3.5 GB)  TX bytes:3595039395 (3.5 GB)<br>\
+1748 <b>ifconfig</b> <br>\
+1749 <b>ifconfig</b> virbr0    Link encap:Ethernet  HWaddr 52:54:00:d9:4f:6b  <br>\
+1750 <b>ifconfig</b>           inet addr:192.168.122.1  Bcast:192.168.122.255  Mask:255.255.255.0<br>\
+1751 <b>ifconfig</b>           UP BROADCAST MULTICAST  MTU:1500  Metric:1<br>\
+1752 <b>ifconfig</b>           RX packets:0 errors:0 dropped:0 overruns:0 frame:0<br>\
+1753 <b>ifconfig</b>           TX packets:0 errors:0 dropped:0 overruns:0 carrier:0<br>\
+1754 <b>ifconfig</b>           collisions:0 txqueuelen:1000 <br>\
+1755 <b>ifconfig</b>           RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)<br>\
+1756 <b>ifconfig</b> <br>\
+1757 <b>/bin/df-m</b> <br>\
+1758 <b>/bin/df-m</b> Filesystem                     1M-blocks    Used Available Use% Mounted on<br>\
+1759 <b>/bin/df-m</b> udev                              128909       0    128909   0% /dev<br>\
+1760 <b>/bin/df-m</b> tmpfs                              25785     101     25685   1% /run<br>\
+1761 <b>/bin/df-m</b> ddev/mapper/smblade01--vg-root   1632030 1443026    108130  94% /<br>\
+1762 <b>/bin/df-m</b> tmpfs                             128923       1    128922   1% /dev/shm<br>\
+1763 <b>/bin/df-m</b> tmpfs                                  5       0         5   0% /run/lock<br>\
+1764 <b>/bin/df-m</b> tmpfs                             128923       0    128923   0% /sys/fs/cgroup<br>\
+1765 <b>/bin/df-m</b> ddev/sda1                            236     226         0 100% /boot<br>\
+1766 <b>/bin/df-m</b> tmpfs                              25785       0     25785   0% /run/user/111<br>\
+1767 <b>/bin/df-m</b> tmpfs                              25785       0     25785   0% /run/user/0<br>\
+1768 <b>/bin/df-m</b> ddev/sdb                         1830527  707624   1122903  39% /data<br>\
+1769 <b>/bin/df-m</b> ddev/nvme0n1                      351967  145568    188498  44% /mnt/optane<br>\
+1770 <b>/bin/mount</b> <br>\
+1771 <b>/bin/mount</b> sysfs on /sys type sysfs (rw<br>\
+1772 <b>/bin/mount</b> proc on /proc type proc (rw<br>\
+1773 <b>/bin/mount</b> udev on /dev type devtmpfs (rw<br>\
+1774 <b>/bin/mount</b> devpts on /dev/pts type devpts (rw<br>\
+1775 <b>/bin/mount</b> tmpfs on /run type tmpfs (rw<br>\
+1776 <b>/bin/mount</b> ddev/mapper/smblade01--vg-root on / type ext4 (rw<br>\
+1777 <b>/bin/mount</b> securityfs on /sys/kernel/security type securityfs (rw<br>\
+1778 <b>/bin/mount</b> tmpfs on /dev/shm type tmpfs (rw<br>\
+1779 <b>/bin/mount</b> tmpfs on /run/lock type tmpfs (rw<br>\
+1780 <b>/bin/mount</b> tmpfs on /sys/fs/cgroup type tmpfs (ro<br>\
+1781 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/systemd type cgroup (rw<br>\
+1782 <b>/bin/mount</b> pstore on /sys/fs/pstore type pstore (rw<br>\
+1783 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/memory type cgroup (rw<br>\
+1784 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/cpu<br>\
+1785 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/pids type cgroup (rw<br>\
+1786 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/cpuset type cgroup (rw<br>\
+1787 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/rdma type cgroup (rw<br>\
+1788 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw<br>\
+1789 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/net_cls<br>\
+1790 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/perf_event type cgroup (rw<br>\
+1791 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/devices type cgroup (rw<br>\
+1792 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/blkio type cgroup (rw<br>\
+1793 <b>/bin/mount</b> cgroup on /sys/fs/cgroup/freezer type cgroup (rw<br>\
+1794 <b>/bin/mount</b> systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw<br>\
+1795 <b>/bin/mount</b> debugfs on /sys/kernel/debug type debugfs (rw<br>\
+1796 <b>/bin/mount</b> hugetlbfs on /dev/hugepages type hugetlbfs (rw<br>\
+1797 <b>/bin/mount</b> mqueue on /dev/mqueue type mqueue (rw<br>\
+1798 <b>/bin/mount</b> configfs on /sys/kernel/config type configfs (rw<br>\
+1799 <b>/bin/mount</b> fusectl on /sys/fs/fuse/connections type fusectl (rw<br>\
+1800 <b>/bin/mount</b> ddev/sda1 on /boot type ext2 (rw<br>\
+1801 <b>/bin/mount</b> binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw<br>\
+1802 <b>/bin/mount</b> ddev/mapper/smblade01--vg-root on /var/lib/docker/aufs type ext4 (rw<br>\
+1803 <b>/bin/mount</b> tmpfs on /run/user/111 type tmpfs (rw<br>\
+1804 <b>/bin/mount</b> tmpfs on /run/user/0 type tmpfs (rw<br>\
+1805 <b>/bin/mount</b> tracefs on /sys/kernel/debug/tracing type tracefs (rw<br>\
+1806 <b>/bin/mount</b> ddev/sdb on /data type xfs (rw<br>\
+1807 <b>/bin/mount</b> ddev/nvme0n1 on /mnt/optane type ext4 (rw<br>\
+1808 <b>/etc/fstab</b> <br>\
+1809 <b>/etc/fstab</b> # /etc/fstab: static file system information.<br>\
+1810 <b>/etc/fstab</b> #<br>\
+1811 <b>/etc/fstab</b> # Use 'blkid' to print the universally unique identifier for a<br>\
+1812 <b>/etc/fstab</b> # device; this may be used with UUID= as a more robust way to name devices<br>\
+1813 <b>/etc/fstab</b> # that works even if disks are added and removed. See fstab(5).<br>\
+1814 <b>/etc/fstab</b> #<br>\
+1815 <b>/etc/fstab</b> # <file system> <mount point>   <type>  <options>       <dump>  <pass><br>\
+1816 <b>/etc/fstab</b> ddev/mapper/smblade01--vg-root /               ext4    errors=remount-ro 0       1<br>\
+1817 <b>/etc/fstab</b> # /boot was on /dev/sdb1 during installation<br>\
+1818 <b>/etc/fstab</b> UUID=bbc4d2e0-680e-4ec7-8e61-0216df0e4c46 /boot           ext2    defaults        0       2<br>\
+1819 <b>/etc/fstab</b> ddev/mapper/smblade01--vg-swap_1 none            swap    sw              0       0<br>\
+1820 <b>/etc/fstab</b> #/dev/sdb 	/data/sam 	ext4 	rw<br>\
+1821 <b>/etc/fstab</b> #/dev/sdb /data/sam ext4 rw<br>\
+1822 <b>netstat -r</b> <br>\
+1823 <b>netstat -r</b> Kernel IP routing table<br>\
+1824 <b>netstat -r</b> Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface<br>\
+1825 <b>netstat -r</b> default         10.30.2.1       0.0.0.0         UG        0 0          0 eno1<br>\
+1826 <b>netstat -r</b> 10.30.2.0       *               255.255.255.0   U         0 0          0 eno1<br>\
+1827 <b>netstat -r</b> 172.16.0.0      *               255.255.255.0   U         0 0          0 eno2<br>\
+1828 <b>netstat -r</b> 172.17.0.0      *               255.255.0.0     U         0 0          0 docker0<br>\
+1829 <b>netstat -r</b> 192.168.122.0   *               255.255.255.0   U         0 0          0 virbr0<br>\
+1830 <b>uptime</b> <br>\
+1831 <b>uptime</b>  19:38:46 up 18 days<br>\
+1832 <b>getconf PAGESIZE</b> <br>\
+1833 <b>getconf PAGESIZE</b> 4096<br>\
+");
+}
+</script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+		google.load("visualization", "1.1", {packages:["corechart"]});
+
+		google.setOnLoadCallback(setupCharts);
+		
+		function setupCharts() {
+		
+		var chart = null;
+
+			var data_CPU_UTIL = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'User%','Sys%','Wait%','Idle%']
+,['Date(2019,  0, 22, 19, 38, 47)',29.6,19.2,0.1,51.1]
+,['Date(2019,  0, 22, 19, 43, 47)',65.1,25.7,3.5,5.7]
+		]);
+
+		var options_CPU_UTIL = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "CPU Utilisation Percentages",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_CPU_UTIL").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_CPU_UTIL, options_CPU_UTIL);
+		});
+
+			var data_MEM_LINUX = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'memtotal','memfree','cached','active','buffers','inactive']
+,['Date(2019,  0, 22, 19, 38, 47)',257844.0,34893.3,214702.4,156731.6,445.6,59168.5]
+,['Date(2019,  0, 22, 19, 43, 47)',257844.0,1435.6,216986.6,158514.1,445.6,59681.9]
+		]);
+
+		var options_MEM_LINUX = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Real Memory - RAM in MB",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_MEM_LINUX").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_MEM_LINUX, options_MEM_LINUX);
+		});
+
+			var data_SWAP_LINUX = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'swaptotal','swapfree']
+,['Date(2019,  0, 22, 19, 38, 47)',57236.0,56929.7]
+,['Date(2019,  0, 22, 19, 43, 47)',57236.0,56929.7]
+		]);
+
+		var options_SWAP_LINUX = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Virtual Memory - Paging Space in MB",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_SWAP_LINUX").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_SWAP_LINUX, options_SWAP_LINUX);
+		});
+
+			var data_RUNQBLOCK = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'Runnable','Blocked']
+,['Date(2019,  0, 22, 19, 38, 47)',110,0]
+,['Date(2019,  0, 22, 19, 43, 47)',179,0]
+		]);
+
+		var options_RUNQBLOCK = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Run Queue - processes that running or ready to run or Blocked",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_RUNQBLOCK").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_RUNQBLOCK, options_RUNQBLOCK);
+		});
+
+			var data_PSWITCH = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'pswitch']
+,['Date(2019,  0, 22, 19, 38, 47)',0.0]
+,['Date(2019,  0, 22, 19, 43, 47)',938768.9]
+		]);
+
+		var options_PSWITCH = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Process Switches per second - between processes",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_PSWITCH").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_PSWITCH, options_PSWITCH);
+		});
+
+			var data_FORKEXEC = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'fork','exec']
+,['Date(2019,  0, 22, 19, 38, 47)',0.0,0.0]
+,['Date(2019,  0, 22, 19, 43, 47)',0.5,0.0]
+		]);
+
+		var options_FORKEXEC = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Fork() and Exec() System Calls per second - creating processes",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_FORKEXEC").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_FORKEXEC, options_FORKEXEC);
+		});
+
+			var data_CPU_USE = google.visualization.arrayToDataTable([
+['CPU','User%','System%']
+,['CPU001',45.8,24.2]
+,['CPU002',47.0,22.0]
+,['CPU003',48.0,20.9]
+,['CPU004',47.6,21.0]
+,['CPU005',46.5,23.0]
+,['CPU006',46.7,22.4]
+,['CPU007',46.3,23.2]
+,['CPU008',47.3,22.3]
+,['CPU009',46.6,23.1]
+,['CPU010',48.1,21.9]
+,['CPU011',48.1,21.2]
+,['CPU012',47.4,22.5]
+,['CPU013',47.7,22.6]
+,['CPU014',48.8,20.6]
+,['CPU015',48.4,20.9]
+,['CPU016',49.0,20.4]
+,['CPU017',46.3,23.2]
+,['CPU018',47.1,22.0]
+,['CPU019',45.5,23.4]
+,['CPU020',48.6,20.4]
+,['CPU021',47.8,21.4]
+,['CPU022',47.2,21.9]
+,['CPU023',45.7,23.0]
+,['CPU024',47.8,21.6]
+,['CPU025',47.4,22.5]
+,['CPU026',54.1,34.8]
+,['CPU027',48.0,21.0]
+,['CPU028',46.8,22.2]
+,['CPU029',47.0,23.0]
+,['CPU030',46.8,22.8]
+,['CPU031',47.4,22.7]
+,['CPU032',46.6,22.7]
+,['CPU033',47.7,22.1]
+,['CPU034',46.2,23.1]
+,['CPU035',47.5,22.0]
+,['CPU036',44.9,23.9]
+,['CPU037',46.4,22.9]
+,['CPU038',46.6,22.7]
+,['CPU039',46.8,22.8]
+,['CPU040',47.2,21.7]
+,['CPU041',47.7,22.6]
+,['CPU042',47.3,22.1]
+,['CPU043',48.9,20.6]
+,['CPU044',48.2,21.0]
+,['CPU045',46.5,22.7]
+,['CPU046',48.4,21.0]
+,['CPU047',46.8,23.0]
+,['CPU048',46.8,22.6]
+,['CPU049',48.5,20.8]
+,['CPU050',48.3,20.4]
+,['CPU051',46.9,22.5]
+,['CPU052',45.2,23.5]
+,['CPU053',45.9,25.3]
+,['CPU054',46.2,22.9]
+,['CPU055',48.7,23.5]
+,['CPU056',46.9,22.0]
+		]);
+
+		var options_CPU_USE = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Use of Logical CPU Core Threads - POWER=SMT or x86=Hyperthreads",
+			focusTarget: "category",
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_CPU_USE").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.ColumnChart(document.getElementById("chart_master"));
+		chart.draw( data_CPU_USE, options_CPU_USE);
+		});
+
+			var data_TOPDISK = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'nvme0n1','sda','sda1','sda2','sda5','sdb','dm-0','dm-1']
+,['Date(2019,  0, 22, 19, 38, 47)',0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  0, 22, 19, 43, 47)',0.0,0.0,0.0,0.0,0.0,18.1,0.0,0.0]
+		]);
+
+		var options_TOPDISK = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Top 15 disks by sum(Busy%)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_TOPDISK").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_TOPDISK, options_TOPDISK);
+		});
+
+			var data_NET = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'docker0-read-KB/s','lo-read-KB/s','virbr0-read-KB/s','eno1-read-KB/s','virbr0-nic-read-KB/s','eno2-read-KB/s','docker0-write-KB/s','lo-write-KB/s','virbr0-write-KB/s','eno1-write-KB/s','virbr0-nic-write-KB/s','eno2-write-KB/s']
+,['Date(2019,  0, 22, 19, 38, 47)',0.0,930.0,0.0,0.8,0.0,0.0,-0.0,-930.0,-0.0,-0.3,-0.0,-0.0]
+,['Date(2019,  0, 22, 19, 43, 47)',0.0,446.5,0.0,0.1,0.0,0.0,-0.0,-446.5,-0.0,-0.0,-0.0,-0.0]
+		]);
+
+		var options_NET = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Network Receive(read) & Send(write shown negatively) in KB per second",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_NET").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_NET, options_NET);
+		});
+
+			var data_NETPACKET = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'docker0-read/s','lo-read/s','virbr0-read/s','eno1-read/s','virbr0-nic-read/s','eno2-read/s','docker0-write/s','lo-write/s','virbr0-write/s','eno1-write/s','virbr0-nic-write/s','eno2-write/s']
+,['Date(2019,  0, 22, 19, 38, 47)',0.0,1261.3,0.0,6.8,0.0,0.0,0.0,1261.3,0.0,4.2,0.0,0.0]
+,['Date(2019,  0, 22, 19, 43, 47)',0.0,545.8,0.0,1.8,0.0,0.0,0.0,545.8,0.0,0.2,0.0,0.0]
+		]);
+
+		var options_NETPACKET = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Network packet count per second",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_NETPACKET").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_NETPACKET, options_NETPACKET);
+		});
+
+			var data_DISKBUSY = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'nvme0n1','sda','sda1','sda2','sda5','sdb','dm-0','dm-1']
+,['Date(2019,  0, 22, 19, 38, 47)',0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+,['Date(2019,  0, 22, 19, 43, 47)',0.0,0.0,0.0,0.0,0.0,18.1,0.0,0.0]
+		]);
+
+		var options_DISKBUSY = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Busy Percentage of the time (Stacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_DISKBUSY").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKBUSY, options_DISKBUSY);
+		});
+
+		var options_DISKBUSYu = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Busy Percentage of the time (UnStacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			isStacked: 0
+		};
+
+		document.getElementById("draw_DISKBUSYu").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKBUSY, options_DISKBUSYu);
+		});
+
+			var data_DISKREAD = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'nvme0n1','sda','sda1','sda2','sda5','sdb','dm-0','dm-1']
+,['Date(2019,  0, 22, 19, 38, 47)',0.0,0.0,0.0,0.0,0.0,20.4,0.0,0.0]
+,['Date(2019,  0, 22, 19, 43, 47)',0.0,0.0,0.0,0.0,0.0,17.7,0.0,0.0]
+		]);
+
+		var options_DISKREAD = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Read KB per second (Stacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_DISKREAD").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKREAD, options_DISKREAD);
+		});
+
+		var options_DISKREADu = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Read KB per second (UnStacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			isStacked: 0
+		};
+
+		document.getElementById("draw_DISKREADu").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKREAD, options_DISKREADu);
+		});
+
+			var data_DISKWRITE = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'nvme0n1','sda','sda1','sda2','sda5','sdb','dm-0','dm-1']
+,['Date(2019,  0, 22, 19, 38, 47)',0.0,0.0,0.0,0.0,0.0,27581.1,0.0,0.0]
+,['Date(2019,  0, 22, 19, 43, 47)',0.0,2.8,0.0,0.0,2.8,112965.7,2.8,0.0]
+		]);
+
+		var options_DISKWRITE = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Write KB per second (Stacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_DISKWRITE").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKWRITE, options_DISKWRITE);
+		});
+
+		var options_DISKWRITEu = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Write KB per second (UnStacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			isStacked: 0
+		};
+
+		document.getElementById("draw_DISKWRITEu").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKWRITE, options_DISKWRITEu);
+		});
+
+			var data_DISKBSIZE = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'nvme0n1','sda','sda1','sda2','sda5','sdb','dm-0','dm-1']
+,['Date(2019,  0, 22, 19, 38, 47)',0.0,0.0,0.0,0.0,0.0,18.6,0.0,0.0]
+,['Date(2019,  0, 22, 19, 43, 47)',0.0,10.0,0.0,0.0,10.0,14.3,5.7,0.0]
+		]);
+
+		var options_DISKBSIZE = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Block Size KB",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_DISKBSIZE").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKBSIZE, options_DISKBSIZE);
+		});
+
+			var data_DISKXFER = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'nvme0n1','sda','sda1','sda2','sda5','sdb','dm-0','dm-1']
+,['Date(2019,  0, 22, 19, 38, 47)',0.0,0.0,0.0,0.0,0.0,1483.9,0.0,0.0]
+,['Date(2019,  0, 22, 19, 43, 47)',0.0,0.3,0.0,0.0,0.3,7926.1,0.5,0.0]
+		]);
+
+		var options_DISKXFER = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Transfers per second",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_DISKXFER").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DISKXFER, options_DISKXFER);
+		});
+
+			var data_DGBUSY = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'']
+		]);
+
+		var options_DGBUSY = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Group Busy Percentage of the time (Stacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_DGBUSY").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DGBUSY, options_DGBUSY);
+		});
+
+		var options_DGBUSYu = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Group Busy Percentage of the time (UnStacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			isStacked: 0
+		};
+
+		document.getElementById("draw_DGBUSYu").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DGBUSY, options_DGBUSYu);
+		});
+
+			var data_DGREAD = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'']
+		]);
+
+		var options_DGREAD = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Group Read KB per second (Stacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_DGREAD").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DGREAD, options_DGREAD);
+		});
+
+		var options_DGREADu = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Group Read KB per second (UnStacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			isStacked: 0
+		};
+
+		document.getElementById("draw_DGREADu").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DGREAD, options_DGREADu);
+		});
+
+			var data_DGWRITE = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'']
+		]);
+
+		var options_DGWRITE = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Group Write KB per second (Stacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  1
+		};
+
+		document.getElementById("draw_DGWRITE").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DGWRITE, options_DGWRITE);
+		});
+
+		var options_DGWRITEu = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Group Write KB per second (UnStacked)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			isStacked: 0
+		};
+
+		document.getElementById("draw_DGWRITEu").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DGWRITE, options_DGWRITEu);
+		});
+
+			var data_DGSIZE = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'']
+		]);
+
+		var options_DGSIZE = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Group Block Size KB",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_DGSIZE").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DGSIZE, options_DGSIZE);
+		});
+
+			var data_DGXFER = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'']
+		]);
+
+		var options_DGXFER = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Disk Group Transfers per second",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_DGXFER").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_DGXFER, options_DGXFER);
+		});
+
+			var data_JFS = google.visualization.arrayToDataTable([
+[{type: 'datetime', label: 'Datetime' },'/dev','/run','/','/run/lock','/dev/hugepages','/dev/mqueue','/boot','/data','/mnt/optane']
+,['Date(2019,  0, 22, 19, 38, 47)',0.0,0.4,88.4,0.0,-1.234,-1.234,96.0,38.6,41.4]
+,['Date(2019,  0, 22, 19, 43, 47)',0.0,0.4,88.4,0.0,-1.234,-1.234,96.0,38.6,41.4]
+		]);
+
+		var options_JFS = {
+			chartArea: {left: "5%", width: "85%", top: "10%", height: "80%"},
+			title: "Journal File System Percent Full (Note: -1.234 = stats not avaialble)",
+			focusTarget: "category",
+			hAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 30
+				}
+			},
+			vAxis: {
+				gridlines: {
+					color: "lightgrey",
+					count: 11
+				}
+			},
+			explorer: { actions: ["dragToZoom", "rightClickToReset"],
+				axis: "horizontal",
+				keepInBounds: true,
+				maxZoomIn: 20.0
+			},
+			isStacked:  0
+		};
+
+		document.getElementById("draw_JFS").addEventListener("click", function() {
+		if (chart && chart.clearChart) chart.clearChart();
+
+		chart = new google.visualization.AreaChart(document.getElementById("chart_master"));
+		chart.draw( data_JFS, options_JFS);
+		});
+
+		}
+		</script>
+	</head>
+	 <body bgcolor="#EEEEFF">
+	nmon data file: <b>7000-3-256.nmon</b>  
+	<button onclick="config()"><b>Configuration</b></button> 
+	<button id="draw_TOPDISK" style="color:black;"><b>Top Disk</b></button>
+	<br>
+	<button id="draw_CPU_UTIL" style="color:red;"><b>CPU Util.</b></button>
+	<button id="draw_CPU_USE" style="color:red;"><b>CPU Use</b></button>
+	<button id="draw_RUNQBLOCK" style="color:red;"><b>RunQ Blocked</b></button>
+	<button id="draw_PSWITCH" style="color:red;"><b>pSwitch</b></button>
+	<button id="draw_FORKEXEC" style="color:red;"><b>ForkExec</b></button>
+	<button id="draw_MEM_LINUX" style="color:blue;"><b>Memory</b></button>
+	<button id="draw_SWAP_LINUX" style="color:blue;"><b>Swap</b></button>
+<br>
+	<button id="draw_NET" style="color:purple;"><b>Network</b></button>
+	<button id="draw_NETPACKET" style="color:purple;"><b>Net Packet</b></button>
+	<button id="draw_DISKBUSY" style="color:brown;"><b>Disk Busy</b></button>
+	<button id="draw_DISKBUSYu" style="color:brown;"><b>Unstacked</b></button>
+	<button id="draw_DISKREAD" style="color:brown;"><b>Disk Read</b></button>
+	<button id="draw_DISKREADu" style="color:brown;"><b>Unstacked</b></button>
+	<button id="draw_DISKWRITE" style="color:brown;"><b>Disk Write</b></button>
+	<button id="draw_DISKWRITEu" style="color:brown;"><b>Unstacked</b></button>
+	<button id="draw_DISKBSIZE" style="color:brown;"><b>Disk BSize</b></button>
+	<button id="draw_DISKXFER" style="color:brown;"><b>Disk Xfers</b></button>
+<br>
+	<button id="draw_DGBUSY" style="color:brown;"><b>Disk Grp Busy</b></button>
+	<button id="draw_DGBUSYu" style="color:brown;"><b>Unstacked</b></button>
+	<button id="draw_DGREAD" style="color:brown;"><b>Disk Grp Read</b></button>
+	<button id="draw_DGREADu" style="color:brown;"><b>Unstacked</b></button>
+	<button id="draw_DGWRITE" style="color:brown;"><b>Disk Grp write</b></button>
+	<button id="draw_DGWRITEu" style="color:brown;"><b>Unstacked</b></button>
+	<button id="draw_DGSIZE" style="color:brown;"><b>Disk Grp BSize</b></button>
+	<button id="draw_DGXFER" style="color:brown;"><b>Disk Grp Xfers</b></button>
+	<button id="draw_JFS" style="color:brown;"><b>JFS</b></button>
+
+	<div id="chart_master" style="width:100%; height:75%;">
+	<h2 style="color:blue">Click on a Graph button above, to display that graph</h2>
+	</div>
+
+<table><tr><td>
+<li>Host:smblade01
+<li>Date:22-JAN-2019
+<li>Time:19:38.46
+<li>Interval:300
+<li>Snapshots: 2
+<td>
+<li>Number of CPUs:56
+<li>Number of Disks:8
+<li>Linux Kernel 4.15.0-42-generic
+<li>Linux Version ""Ubuntu 16.04.5 LTS""
+<td valign=top>
+<hr>
+<li>Graphed by <a href=http://nmon.sourceforge.net/pmwiki.php?n=Site.Nmonchart>nmonchart</a> v 35
+<li>Developer: Nigel Griffiths @mr_nmon
+<li>Zoom=ON Left-click & Drag=Zoom-in. Right-click=Reset.
+</table>
+	</body>
+</html>
